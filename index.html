@@ -14,8 +14,57 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Custom Title Bar -->
-  <title>FlatConnect - Smart Apartment Management</title>
+  <!-- SEO Meta Tags -->
+  <title>FlatConnect - Smart Apartment Management Platform | Residential Society Management</title>
+  <meta name="description" content="FlatConnect is a comprehensive apartment management platform for residential societies. Track maintenance fees, send WhatsApp reminders, manage expenses, and streamline community operations with role-based access control.">
+  <meta name="keywords" content="apartment management, residential society management, maintenance fee tracking, WhatsApp reminders, community management, apartment app, society app, flat management, residential community platform">
+  <meta name="author" content="Saumya Prakash">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="FlatConnect - Smart Apartment Management Platform">
+  <meta property="og:description" content="Streamline your residential society management with FlatConnect. Track maintenance fees, send automated reminders, and improve community communication.">
+  <meta property="og:image" content="https://flatconnect.in/public/flatConnectIcon.png">
+  <meta property="og:url" content="https://flatconnect.in">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FlatConnect">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FlatConnect - Smart Apartment Management Platform">
+  <meta name="twitter:description" content="Streamline your residential society management with FlatConnect. Track maintenance fees, send automated reminders, and improve community communication.">
+  <meta name="twitter:image" content="https://flatconnect.in/public/flatConnectIcon.png">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://flatconnect.in">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "FlatConnect",
+    "description": "Smart apartment management platform for residential societies and gated communities",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web, iOS, Android",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Saumya Prakash"
+    },
+    "url": "https://flatconnect.in",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-9945342325",
+      "email": "contact@flatconnect.in",
+      "contactType": "customer support"
+    }
+  }
+  </script>
 
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -226,6 +275,22 @@
       text-align: center;
     }
     
+    .cta-section h3 {
+      color: var(--white);
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+    
+    .cta-section p {
+      color: rgba(255,255,255,0.95);
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 1.6;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+    
     .benefits-list {
       list-style: none;
       padding: 0;
@@ -375,10 +440,10 @@
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" role="navigation">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#home">
-        <img src="public/flatConnectIcon.png" alt="FlatConnect" style="height: 32px; width: 32px; margin-right: 8px; z-index: 1000;">
+      <a class="navbar-brand d-flex align-items-center" href="#home" aria-label="FlatConnect Home">
+        <img src="public/flatConnectIcon.png" alt="FlatConnect Logo - Apartment Management Platform" style="height: 32px; width: 32px; margin-right: 8px; z-index: 1000;">
         <span>FlatConnect</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -409,25 +474,25 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <div class="app-logo">
-            <img src="public/flatConnectIcon.png" alt="FlatConnect Logo">
+            <img src="public/flatConnectIcon.png" alt="FlatConnect - Smart Apartment Management Platform Logo">
           </div>
           <h1 class="display-4 font-weight-bold mb-4">FlatConnect</h1>
-          <p class="lead mb-4">Smart Apartment Management Made Simple</p>
-          <p class="mb-5">Streamlining residential society management for modern communities</p>
-          <a href="#features" class="btn btn-light btn-lg">Explore Features</a>
+          <p class="lead mb-4">Affordable Digital Management for Small Societies</p>
+          <p class="mb-5">Move beyond paper diaries and Excel sheets. Simple, cost-effective apartment management for communities that can't afford expensive platforms like MyGate</p>
+          <a href="#features" class="btn btn-light btn-lg">Start Your Digital Journey</a>
         </div>
       </div>
     </div>
   </header>
 
   <!-- About Section -->
-  <section class="about-section">
+  <section class="about-section" id="about">
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto text-center">
           <h2 class="section-title">About FlatConnect</h2>
-          <p class="lead">FlatConnect is a smart, all-in-one apartment management platform designed for residential societies and gated communities. It simplifies day-to-day operations by offering features like maintenance fee tracking, automated WhatsApp reminders, digital expense logs, UPI-based payments, resident registration, and role-based access control — all through a mobile-friendly app.</p>
-          <p class="text-muted">Whether you're a tenant, owner, or committee member, FlatConnect streamlines communication and financial transparency, saving time and effort for everyone involved.</p>
+          <p class="lead">FlatConnect is designed specifically for small residential societies still managing with traditional methods like paper diaries, Excel sheets, and manual record-keeping. We provide an affordable, easy-to-use digital platform that doesn't require expensive infrastructure or complex training.</p>
+          <p class="text-muted">Perfect for societies with 8-200 flats that find platforms like MyGate, NoBroker Hood, or Adda too expensive or complicated. Get all essential features at a fraction of the cost, with simple setup and immediate benefits.</p>
         </div>
       </div>
     </div>
@@ -446,48 +511,48 @@
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="feature-card text-center h-100">
             <i class="fa fa-money feature-icon"></i>
-            <h4 class="mb-3">Maintenance Fee Tracking</h4>
-            <p>Effortlessly track and manage monthly maintenance fees with detailed records and payment history.</p>
+            <h4 class="mb-3">Simple Maintenance Tracking</h4>
+            <p>Replace your paper registers and Excel sheets with easy digital tracking. No complex setup - just simple maintenance fee management.</p>
           </div>
         </div>
         
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="feature-card text-center h-100">
             <i class="fa fa-whatsapp feature-icon"></i>
-            <h4 class="mb-3">Automated WhatsApp Reminders</h4>
-            <p>Send automated payment reminders and important notifications directly to residents via WhatsApp.</p>
+            <h4 class="mb-3">WhatsApp Reminders</h4>
+            <p>Automated payment reminders via WhatsApp. No need for expensive SMS services or complex notification systems.</p>
           </div>
         </div>
         
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="feature-card text-center h-100">
             <i class="fa fa-file-text feature-icon"></i>
-            <h4 class="mb-3">Digital Expense Logs</h4>
-            <p>Maintain transparent digital records of all society expenses with easy access and reporting.</p>
+            <h4 class="mb-3">Digital Record Keeping</h4>
+            <p>Say goodbye to lost receipts and messy files. Simple digital expense logging that anyone can use.</p>
           </div>
         </div>
         
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="feature-card text-center h-100">
-            <i class="fa fa-credit-card feature-icon"></i>
-            <h4 class="mb-3">UPI-Based Payments</h4>
-            <p>Seamless payment processing through UPI integration for quick and secure transactions.</p>
+            <i class="fa fa-rupee feature-icon"></i>
+            <h4 class="mb-3">Affordable Solution</h4>
+            <p>Get essential features at 1/10th the cost of expensive platforms. Perfect for budget-conscious societies.</p>
           </div>
         </div>
         
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="feature-card text-center h-100">
             <i class="fa fa-users feature-icon"></i>
-            <h4 class="mb-3">Resident Registration</h4>
-            <p>Comprehensive resident management system with detailed profiles and contact information.</p>
+            <h4 class="mb-3">Easy Resident Management</h4>
+            <p>Simple resident directory and contact management. No complicated onboarding - start using immediately.</p>
           </div>
         </div>
         
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="feature-card text-center h-100">
-            <i class="fa fa-shield feature-icon"></i>
-            <h4 class="mb-3">Role-Based Access</h4>
-            <p>Secure access control with different permission levels for tenants, owners, and committee members.</p>
+            <i class="fa fa-mobile feature-icon"></i>
+            <h4 class="mb-3">Mobile-First Design</h4>
+            <p>Works perfectly on smartphones. No expensive tablets or hardware required - use what you already have.</p>
           </div>
         </div>
       </div>
@@ -499,20 +564,20 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <h2 class="section-title text-center">Why Choose FlatConnect?</h2>
+          <h2 class="section-title text-center">Why Choose FlatConnect Over Expensive Platforms?</h2>
           <div class="row">
             <div class="col-md-6">
               <ul class="benefits-list">
-                <li><i class="fa fa-check check-icon"></i> <strong>Mobile-Friendly:</strong> Access everything from your smartphone</li>
-                <li><i class="fa fa-check check-icon"></i> <strong>Time-Saving:</strong> Automate routine tasks and communications</li>
-                <li><i class="fa fa-check check-icon"></i> <strong>Transparent:</strong> Clear financial records and expense tracking</li>
+                <li><i class="fa fa-check check-icon"></i> <strong>Affordable:</strong> 90% cheaper than MyGate or NoBroker Hood</li>
+                <li><i class="fa fa-check check-icon"></i> <strong>Simple Setup:</strong> Start using in 30 minutes, not 30 days</li>
+                <li><i class="fa fa-check check-icon"></i> <strong>No Training Required:</strong> Intuitive design anyone can use</li>
               </ul>
             </div>
             <div class="col-md-6">
               <ul class="benefits-list">
-                <li><i class="fa fa-check check-icon"></i> <strong>Secure:</strong> Role-based access ensures data privacy</li>
-                <li><i class="fa fa-check check-icon"></i> <strong>Efficient:</strong> Streamlined processes for all stakeholders</li>
-                <li><i class="fa fa-check check-icon"></i> <strong>User-Friendly:</strong> Intuitive interface for all age groups</li>
+                <li><i class="fa fa-check check-icon"></i> <strong>Small Society Focused:</strong> Perfect for 8-200 flat communities</li>
+                <li><i class="fa fa-check check-icon"></i> <strong>Replace Paper Systems:</strong> Digital upgrade from diary-based management</li>
+                <li><i class="fa fa-check check-icon"></i> <strong>Local Support:</strong> Personal assistance when you need it</li>
               </ul>
             </div>
           </div>
@@ -527,9 +592,9 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <div class="cta-section">
-            <h3 class="mb-4">Ready to Transform Your Society Management?</h3>
-            <p class="mb-4">Join residential communities using FlatConnect to simplify their operations.</p>
-            <a href="#contact" class="btn btn-light btn-lg">Get Started Today</a>
+            <h3 class="mb-4">Ready to Go Digital Without Breaking the Bank?</h3>
+            <p class="mb-4">Join small societies who've upgraded from paper diaries to smart digital management. No expensive setup fees, no complex training required.</p>
+            <a href="#contact" class="btn btn-light btn-lg">Start Free Trial</a>
           </div>
         </div>
       </div>
@@ -541,8 +606,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
-          <h2 class="section-title">Get In Touch</h2>
-          <p class="lead mb-5">Ready to revolutionize your apartment community management?</p>
+          <h2 class="section-title">Ready to Upgrade Your Society?</h2>
+          <p class="lead mb-5">Transform your traditional diary-based management into a modern digital system. Perfect for small societies looking for affordable solutions.</p>
           <div class="row">
             <div class="col-md-6 mb-4">
               <a href="mailto:contact@flatconnect.in" class="contact-link">
