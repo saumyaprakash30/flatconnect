@@ -30,7 +30,7 @@
         
         h1 {
             color: #2c3e50;
-            border-bottom: 3px solid #3498db;
+            border-bottom: 3px solid #008080;
             padding-bottom: 10px;
             margin-bottom: 20px;
             font-size: 2.5em;
@@ -41,7 +41,7 @@
             margin-top: 30px;
             margin-bottom: 15px;
             font-size: 1.5em;
-            border-left: 4px solid #3498db;
+            border-left: 4px solid #008080;
             padding-left: 15px;
         }
         
@@ -80,8 +80,8 @@
         }
         
         .highlight {
-            background: #e8f4fd;
-            border-left: 4px solid #3498db;
+            background: #f0f9f8;
+            border-left: 4px solid #008080;
             padding: 15px;
             margin: 20px 0;
             border-radius: 0 5px 5px 0;
@@ -116,10 +116,24 @@
             margin-bottom: 30px;
         }
         
+        .logo a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .logo a:hover {
+            text-decoration: none;
+        }
+        
         .logo h1 {
-            color: #3498db;
+            color: #008080;
             border: none;
             margin: 0;
+            transition: color 0.3s ease;
+        }
+        
+        .logo a:hover h1 {
+            color: #20b2aa;
         }
         
         .logo p {
@@ -143,8 +157,10 @@
 <body>
     <div class="container">
         <div class="logo">
-            <h1>FlatConnect</h1>
-            <p>Building Better Communities</p>
+            <a href="index.html" style="text-decoration: none;">
+                <h1>FlatConnect</h1>
+                <p>Building Better Communities</p>
+            </a>
         </div>
         
         <h1>Terms of Service</h1>
