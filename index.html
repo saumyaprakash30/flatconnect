@@ -31,81 +31,120 @@
     rel='stylesheet' type='text/css'>
 
   <!-- Custom favicon -->
-  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="public/flatConnectIcon.png" type="image/x-icon">
+  <link rel="icon" href="public/flatConnectIcon.png" type="image/png">
 
   <style>
+    :root {
+      --primary-teal: #008080;
+      --light-teal: #20b2aa;
+      --dark-teal: #006666;
+      --very-light-teal: #f0f9f8;
+      --text-dark: #2c3e50;
+      --text-light: #546e7a;
+      --text-muted: #6c757d;
+      --white: #ffffff;
+      --light-gray: #f8f9fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
     body {
       font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      font-size: 16px;
     }
     
     .app-header {
-      background: linear-gradient(rgba(41, 128, 185, 0.9), rgba(44, 62, 80, 0.9)), linear-gradient(45deg, #667eea 0%, #764ba2 100%);
-      background-size: cover;
-      background-position: center;
-      min-height: 500px;
+      background: linear-gradient(135deg, var(--primary-teal) 0%, var(--dark-teal) 100%);
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      color: var(--white);
+    }
+    
+    .app-header h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .app-header .lead {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.95);
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+    
+    .app-header p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.9);
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     }
     
     .feature-card {
-      background: #fff;
-      border-radius: 15px;
-      padding: 2.5rem;
+      background: var(--white);
+      border-radius: 10px;
+      padding: 2rem;
       margin-bottom: 2rem;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 15px rgba(0, 128, 128, 0.1);
       transition: all 0.3s ease;
-      border: 1px solid #f0f0f0;
+      border: 1px solid var(--very-light-teal);
+      height: 100%;
+    }
+    
+    .feature-card h4 {
+      color: var(--text-dark);
+      font-weight: 600;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    
+    .feature-card p {
+      color: var(--text-light);
+      font-size: 1rem;
+      line-height: 1.6;
     }
     
     .feature-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 128, 128, 0.2);
     }
     
     .feature-icon {
-      font-size: 3.5rem;
-      color: #2980b9;
-      margin-bottom: 1.5rem;
+      font-size: 3rem;
+      color: var(--primary-teal);
+      margin-bottom: 1rem;
       display: block;
     }
     
-    .hero-section {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 4rem 0;
-    }
-    
-    .app-logo {
-      font-size: 5rem;
-      margin-bottom: 1rem;
-      animation: bounce 2s infinite;
-    }
-    
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-      }
-      40% {
-        transform: translateY(-10px);
-      }
-      60% {
-        transform: translateY(-5px);
-      }
+    .app-logo img {
+      height: 100px;
+      width: 100px;
+      margin-bottom: 2rem;
+      filter: brightness(0) invert(1);
     }
     
     .section-title {
-      color: #2c3e50;
+      color: var(--text-dark);
       margin-bottom: 3rem;
       position: relative;
       font-weight: 600;
+      font-size: 2.5rem;
     }
     
     .section-title::after {
       content: '';
-      width: 80px;
-      height: 4px;
-      background: linear-gradient(45deg, #2980b9, #3498db);
+      width: 60px;
+      height: 3px;
+      background: var(--primary-teal);
       position: absolute;
       bottom: -15px;
       left: 50%;
@@ -113,30 +152,77 @@
       border-radius: 2px;
     }
     
-    .btn-custom {
-      background: linear-gradient(45deg, #2980b9, #3498db);
-      border: none;
-      color: white;
-      padding: 15px 30px;
-      border-radius: 50px;
+    .lead {
+      font-size: 1.25rem;
+      color: var(--text-light);
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    .text-muted {
+      color: var(--text-muted) !important;
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      color: var(--text-dark);
       font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      transition: all 0.3s ease;
+    }
+
+    h5 {
+      color: var(--text-dark);
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: var(--text-light);
+      margin-bottom: 1rem;
     }
     
-    .btn-custom:hover {
-      background: linear-gradient(45deg, #1f5c8a, #2980b9);
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(41, 128, 185, 0.3);
-      color: white;
+    .btn-primary {
+      background: var(--primary-teal);
+      border: none;
+      color: var(--white);
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .btn-primary:hover {
+      background: var(--dark-teal);
+      transform: translateY(-2px);
+      color: var(--white);
+      text-decoration: none;
+    }
+    
+    .btn-light {
+      background: var(--white);
+      color: var(--primary-teal);
+      border: 2px solid var(--white);
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .btn-light:hover {
+      background: transparent;
+      color: var(--white);
+      text-decoration: none;
     }
     
     .cta-section {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
+      background: var(--primary-teal);
+      color: var(--white);
       padding: 4rem 2rem;
-      border-radius: 15px;
+      border-radius: 10px;
       text-align: center;
     }
     
@@ -146,8 +232,11 @@
     }
     
     .benefits-list li {
-      padding: 10px 0;
-      border-bottom: 1px solid #ecf0f1;
+      padding: 15px 0;
+      border-bottom: 1px solid var(--very-light-teal);
+      font-size: 1.1rem;
+      color: var(--text-dark);
+      line-height: 1.6;
     }
     
     .benefits-list li:last-child {
@@ -155,47 +244,131 @@
     }
     
     .check-icon {
-      color: #27ae60;
-      font-size: 1.2em;
-      margin-right: 10px;
+      color: var(--light-teal);
+      font-size: 1.3em;
+      margin-right: 12px;
     }
     
     .navbar {
-      background: rgba(255, 255, 255, 0.95) !important;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+      background: var(--white) !important;
+      box-shadow: 0 2px 10px rgba(0, 128, 128, 0.1);
+      z-index: 1050;
+      padding: 1rem 0;
     }
     
     .navbar-brand {
       font-weight: 700;
       font-size: 1.5rem;
-      color: #2c3e50 !important;
+      color: var(--primary-teal) !important;
+    }
+    
+    .navbar-brand img {
+      vertical-align: middle;
+      /* Keep original teal color for navbar */
     }
     
     .nav-link {
-      color: #2c3e50 !important;
+      color: var(--text-dark) !important;
       font-weight: 500;
       margin: 0 10px;
+      transition: color 0.3s ease;
     }
     
     .nav-link:hover {
-      color: #2980b9 !important;
+      color: var(--primary-teal) !important;
     }
     
     footer {
-      background: #2c3e50;
-      color: white;
+      background: var(--text-dark);
+      color: var(--white);
       padding: 3rem 0;
     }
     
     footer a {
-      color: #3498db;
+      color: var(--light-teal);
       text-decoration: none;
     }
     
     footer a:hover {
-      color: #5dade2;
+      color: var(--primary-teal);
       text-decoration: underline;
+    }
+
+    .bg-light {
+      background-color: var(--very-light-teal) !important;
+    }
+
+    .text-primary {
+      color: var(--primary-teal) !important;
+    }
+
+    section {
+      padding: 5rem 0;
+    }
+
+    .lead {
+      font-size: 1.2rem;
+      color: var(--text-light);
+    }
+
+    h4 {
+      color: var(--text-dark);
+      font-weight: 600;
+    }
+
+    .contact-icon {
+      color: var(--primary-teal);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      padding: 1.5rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      background: var(--white);
+      box-shadow: 0 2px 10px rgba(0, 128, 128, 0.1);
+    }
+
+    .contact-link:hover {
+      text-decoration: none;
+      color: inherit;
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 128, 128, 0.2);
+      background: var(--white);
+    }
+
+    .contact-link:hover .contact-icon {
+      color: var(--light-teal);
+      transform: scale(1.1);
+    }
+
+    .contact-link h5 {
+      color: var(--text-dark);
+      margin-top: 0.5rem;
+    }
+
+    .contact-link p {
+      color: var(--text-light);
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    /* Better contrast for About section */
+    .about-section {
+      background-color: var(--very-light-teal);
+    }
+
+    .about-section .lead {
+      color: var(--text-dark);
+      font-weight: 500;
+    }
+
+    .about-section .text-muted {
+      color: var(--text-light) !important;
     }
   </style>
 </head>
@@ -204,7 +377,10 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#home">🏢 FlatConnect</a>
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <img src="public/flatConnectIcon.png" alt="FlatConnect" style="height: 32px; width: 32px; margin-right: 8px; z-index: 1000;">
+        <span>FlatConnect</span>
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -229,22 +405,23 @@
 
   <!-- App Header -->
   <header class="app-header" id="home">
-    <div class="container text-center text-white">
+    <div class="container text-center">
       <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <div class="app-logo">🏢</div>
-          <h1 class="display-3 font-weight-bold mb-3">FlatConnect</h1>
-          <hr class="my-4" style="border-color: white; width: 100px;">
-          <p class="lead mb-4">Smart, All-in-One Apartment Management Platform</p>
-          <p class="mb-5">Simplifying residential society management for modern communities</p>
-          <a href="#features" class="btn btn-custom btn-lg">Discover Features</a>
+        <div class="col-lg-8 mx-auto">
+          <div class="app-logo">
+            <img src="public/flatConnectIcon.png" alt="FlatConnect Logo">
+          </div>
+          <h1 class="display-4 font-weight-bold mb-4">FlatConnect</h1>
+          <p class="lead mb-4">Smart Apartment Management Made Simple</p>
+          <p class="mb-5">Streamlining residential society management for modern communities</p>
+          <a href="#features" class="btn btn-light btn-lg">Explore Features</a>
         </div>
       </div>
     </div>
   </header>
 
   <!-- About Section -->
-  <section class="py-5 bg-light">
+  <section class="about-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto text-center">
@@ -257,7 +434,7 @@
   </section>
 
   <!-- Features Section -->
-  <section class="py-5" id="features">
+  <section id="features">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center mb-5">
@@ -318,7 +495,7 @@
   </section>
 
   <!-- Benefits Section -->
-  <section class="py-5 bg-light" id="benefits">
+  <section class="bg-light" id="benefits">
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto">
@@ -345,13 +522,13 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="py-5">
+  <section>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <div class="cta-section">
             <h3 class="mb-4">Ready to Transform Your Society Management?</h3>
-            <p class="mb-4">Join hundreds of residential communities already using FlatConnect to simplify their operations.</p>
+            <p class="mb-4">Join residential communities using FlatConnect to simplify their operations.</p>
             <a href="#contact" class="btn btn-light btn-lg">Get Started Today</a>
           </div>
         </div>
@@ -360,20 +537,26 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="py-5 bg-light" id="contact">
+  <section class="bg-light" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
           <h2 class="section-title">Get In Touch</h2>
-          <p class="lead mb-4">Ready to revolutionize your apartment community management?</p>
+          <p class="lead mb-5">Ready to revolutionize your apartment community management?</p>
           <div class="row">
-            <div class="col-md-6 mb-3">
-              <i class="fa fa-envelope fa-2x text-primary mb-2"></i>
-              <p><strong>Email</strong><br>contact@flatconnect.in</p>
+            <div class="col-md-6 mb-4">
+              <a href="mailto:contact@flatconnect.in" class="contact-link">
+                <i class="fa fa-envelope contact-icon"></i>
+                <h5>Email</h5>
+                <p>contact@flatconnect.in</p>
+              </a>
             </div>
-            <div class="col-md-6 mb-3">
-              <i class="fa fa-phone fa-2x text-primary mb-2"></i>
-              <p><strong>Phone</strong><br>+91 9945342325</p>
+            <div class="col-md-6 mb-4">
+              <a href="tel:+919945342325" class="contact-link">
+                <i class="fa fa-phone contact-icon"></i>
+                <h5>Phone</h5>
+                <p>+91 9945342325</p>
+              </a>
             </div>
           </div>
         </div>
