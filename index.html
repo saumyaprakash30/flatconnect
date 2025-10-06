@@ -15,25 +15,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- SEO Meta Tags -->
-  <title>FlatConnect - Smart Apartment Management Platform | Residential Society Management</title>
-  <meta name="description" content="FlatConnect is a comprehensive apartment management platform for residential societies. Track maintenance fees, send WhatsApp reminders, manage expenses, and streamline community operations with role-based access control.">
-  <meta name="keywords" content="apartment management, residential society management, maintenance fee tracking, WhatsApp reminders, community management, apartment app, society app, flat management, residential community platform">
+  <title>FlatConnect App Download - Complete Society Management | Finance, Free Features & More</title>
+  <meta name="description" content="FlatConnect: Complete apartment management with finance tracking, free resident directory & notices. Android app & web platform. Coming soon: payment gateway, visitor management, amenity booking.">
+  <meta name="keywords" content="FlatConnect app download, apartment management, maintenance tracking, expense tracking, resident directory, notice board, payment gateway, visitor management, society management app">
   <meta name="author" content="Saumya Prakash">
   <meta name="robots" content="index, follow">
   
+  <!-- App-specific Meta Tags -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="FlatConnect">
+  <meta name="application-name" content="FlatConnect">
+  <meta name="theme-color" content="#008080">
+  <meta name="msapplication-TileColor" content="#008080">
+  <meta name="msapplication-navbutton-color" content="#008080">
+  
+  <!-- App Store Optimization -->
+  <meta property="al:android:url" content="flatconnect://open">
+  <meta property="al:android:app_name" content="FlatConnect">
+  <meta property="al:android:package" content="com.flatconnect.flatconnect_app">
+  <meta property="al:web:url" content="https://app.flatconnect.in/">
+  <meta property="al:web:should_fallback" content="true">
+  
   <!-- Open Graph Meta Tags for Social Media -->
-  <meta property="og:title" content="FlatConnect - Smart Apartment Management Platform">
-  <meta property="og:description" content="Streamline your residential society management with FlatConnect. Track maintenance fees, send automated reminders, and improve community communication.">
+  <meta property="og:title" content="FlatConnect - Android App & Web Platform">
+  <meta property="og:description" content="Download FlatConnect Android app from Google Play Store or use web app at app.flatconnect.in. Affordable apartment management for small societies.">
   <meta property="og:image" content="https://flatconnect.in/public/flatConnectIcon.png">
   <meta property="og:url" content="https://flatconnect.in">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="FlatConnect">
   
   <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="FlatConnect - Smart Apartment Management Platform">
-  <meta name="twitter:description" content="Streamline your residential society management with FlatConnect. Track maintenance fees, send automated reminders, and improve community communication.">
+  <meta name="twitter:card" content="app">
+  <meta name="twitter:title" content="FlatConnect - Android App & Web Platform">
+  <meta name="twitter:description" content="Download FlatConnect Android app or use web app. Affordable apartment management for small societies.">
   <meta name="twitter:image" content="https://flatconnect.in/public/flatConnectIcon.png">
+  <meta name="twitter:app:name:googleplay" content="FlatConnect">
+  <meta name="twitter:app:id:googleplay" content="com.flatconnect.flatconnect_app">
+  <meta name="twitter:app:url:googleplay" content="https://play.google.com/store/apps/details?id=com.flatconnect.flatconnect_app">
   
   <!-- Canonical URL -->
   <link rel="canonical" href="https://flatconnect.in">
@@ -44,9 +64,14 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "FlatConnect",
-    "description": "Smart apartment management platform for residential societies and gated communities",
+    "description": "Affordable apartment management platform for small residential societies. Available as Android app and web application for iOS/Web users.",
     "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Web, iOS, Android",
+    "operatingSystem": "Android, iOS, Web",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=com.flatconnect.flatconnect_app",
+    "installUrl": "https://app.flatconnect.in/",
+    "softwareVersion": "1.0",
+    "releaseNotes": "Initial release with maintenance tracking, payment reminders, and resident communication features",
+    "screenshot": "https://flatconnect.in/public/flatConnectIcon.png",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -57,11 +82,26 @@
       "name": "Saumya Prakash"
     },
     "url": "https://flatconnect.in",
+    "applicationSubCategory": "Property Management",
+    "keywords": "apartment management, maintenance tracking, payment reminders, residential society, Android app, web app, finance management, expense tracking, visitor management",
+    "featureList": [
+      "Maintenance Management & Fee Tracking",
+      "Expense Tracking & Digital Ledger", 
+      "Free Resident Directory",
+      "Notice Generation & Sharing",
+      "Cross-platform compatibility (Android & Web)",
+      "Coming Soon: Payment Gateway, Visitor Management, Amenity Booking"
+    ],
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+91-9945342325",
       "email": "contact@flatconnect.in",
       "contactType": "customer support"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "1"
     }
   }
   </script>
@@ -422,6 +462,34 @@
       font-weight: 500;
     }
 
+    /* FAQ Section Styles */
+    .accordion .card {
+      border: 1px solid var(--light-teal);
+      border-radius: 8px;
+    }
+
+    .accordion .card-header {
+      background: var(--very-light-teal);
+      border-bottom: 1px solid var(--light-teal);
+    }
+
+    .accordion .btn-link {
+      color: var(--primary-teal);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .accordion .btn-link:hover {
+      color: var(--dark-teal);
+      text-decoration: none;
+    }
+
+    .accordion .card-body {
+      background: white;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
     /* Better contrast for About section */
     .about-section {
       background-color: var(--very-light-teal);
@@ -434,6 +502,125 @@
 
     .about-section .text-muted {
       color: var(--text-light) !important;
+    }
+
+    /* App Download Buttons */
+    .download-buttons {
+      margin-top: 2rem;
+    }
+
+    .btn-download {
+      background: var(--white);
+      color: var(--primary-teal);
+      border: 2px solid var(--white);
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      margin: 0 10px 10px 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .btn-download:hover {
+      background: rgba(255,255,255,0.9);
+      transform: translateY(-2px);
+      color: var(--primary-teal);
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .btn-download i {
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+
+    .download-text {
+      text-align: left;
+      line-height: 1.2;
+    }
+
+    .download-text small {
+      display: block;
+      font-size: 0.75rem;
+      opacity: 0.8;
+    }
+
+    .download-text span {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .btn-demo {
+      background: var(--light-teal);
+      color: var(--white);
+      border: 2px solid var(--light-teal);
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      margin: 0 10px 10px 10px;
+      box-shadow: 0 4px 15px rgba(32, 178, 170, 0.3);
+    }
+
+    .btn-demo:hover {
+      background: var(--primary-teal);
+      border-color: var(--primary-teal);
+      transform: translateY(-2px);
+      color: var(--white);
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(32, 178, 170, 0.4);
+    }
+
+    .btn-demo i {
+      font-size: 1.5rem;
+      margin-right: 10px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .btn-learn-more {
+      background: var(--white);
+      color: var(--primary-teal);
+      border: 2px solid var(--white);
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      margin: 0 10px 10px 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .btn-learn-more:hover {
+      background: rgba(255,255,255,0.9);
+      transform: translateY(-2px);
+      color: var(--primary-teal);
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .btn-learn-more i {
+      font-size: 1.5rem;
+      margin-right: 10px;
     }
   </style>
 </head>
@@ -461,6 +648,9 @@
             <a class="nav-link" href="#benefits">Benefits</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
@@ -477,9 +667,39 @@
             <img src="public/flatConnectIcon.png" alt="FlatConnect - Smart Apartment Management Platform Logo">
           </div>
           <h1 class="display-4 font-weight-bold mb-4">FlatConnect</h1>
-          <p class="lead mb-4">Affordable Digital Management for Small Societies</p>
-          <p class="mb-5">Move beyond paper diaries and Excel sheets. Simple, cost-effective apartment management for communities that can't afford expensive platforms like MyGate</p>
-          <a href="#features" class="btn btn-light btn-lg">Start Your Digital Journey</a>
+          <p class="lead mb-4">Complete Financial & Community Management for Small Societies</p>
+          <p class="mb-4">Comprehensive apartment management with finance tracking, free resident directory, and digital notices. Available on Android, iOS & Web. Essential features with upcoming payment gateway, visitor management, and community tools.</p>
+          
+          <div class="download-buttons">
+            <a href="https://play.google.com/store/apps/details?id=com.flatconnect.flatconnect_app" target="_blank" class="btn-download">
+              <i class="fa fa-android"></i>
+              <div class="download-text">
+                <small>Get it on</small>
+                <span>Google Play</span>
+              </div>
+            </a>
+            <a href="https://app.flatconnect.in/" target="_blank" class="btn-download">
+              <i class="fa fa-apple"></i>
+              <div class="download-text">
+                <small>Open on</small>
+                <span>iOS/Web</span>
+              </div>
+            </a>
+            <a href="tel:+919945342325" class="btn-demo">
+              <i class="fa fa-phone"></i>
+              <div class="download-text">
+                <small>Get Live</small>
+                <span>Demo</span>
+              </div>
+            </a>
+            <a href="#features" class="btn-learn-more">
+              <i class="fa fa-info-circle"></i>
+              <div class="download-text">
+                <small>Explore</small>
+                <span>Features</span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -504,56 +724,153 @@
       <div class="row">
         <div class="col-lg-12 text-center mb-5">
           <h2 class="section-title">Key Features</h2>
+          <p class="text-muted">Comprehensive apartment management solution with essential and advanced features</p>
         </div>
       </div>
       
-      <div class="row">
+      <!-- Finance Features -->
+      <div class="row mb-5">
+        <div class="col-lg-12">
+          <h3 class="text-center mb-4" style="color: var(--primary-teal);">Finance Management</h3>
+        </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="feature-card text-center h-100">
             <i class="fa fa-money feature-icon"></i>
-            <h4 class="mb-3">Simple Maintenance Tracking</h4>
-            <p>Replace your paper registers and Excel sheets with easy digital tracking. No complex setup - just simple maintenance fee management.</p>
+            <h4 class="mb-3">Maintenance Management</h4>
+            <p>Track monthly maintenance fees, generate bills, and monitor payment status for all residents with automated calculations.</p>
           </div>
         </div>
         
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="feature-card text-center h-100">
-            <i class="fa fa-whatsapp feature-icon"></i>
-            <h4 class="mb-3">WhatsApp Reminders</h4>
-            <p>Automated payment reminders via WhatsApp. No need for expensive SMS services or complex notification systems.</p>
+            <i class="fa fa-chart-line feature-icon"></i>
+            <h4 class="mb-3">Expense Tracking</h4>
+            <p>Record and categorize all society expenses with detailed breakdowns. Monitor spending patterns and budget management.</p>
           </div>
         </div>
         
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="feature-card text-center h-100">
-            <i class="fa fa-file-text feature-icon"></i>
-            <h4 class="mb-3">Digital Record Keeping</h4>
-            <p>Say goodbye to lost receipts and messy files. Simple digital expense logging that anyone can use.</p>
+            <i class="fa fa-book feature-icon"></i>
+            <h4 class="mb-3">Digital Ledger</h4>
+            <p>Complete financial ledger with income, expenses, and balance tracking. Generate financial reports and statements.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Free Features -->
+      <div class="row mb-5">
+        <div class="col-lg-12">
+          <h3 class="text-center mb-4" style="color: var(--light-teal);">Free Features</h3>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="feature-card text-center h-100" style="border: 2px solid var(--light-teal);">
+            <i class="fa fa-users feature-icon" style="color: var(--light-teal);"></i>
+            <h4 class="mb-3">Resident Directory</h4>
+            <p>Complete resident contact database with family details, flat information, and emergency contacts. Always free to use.</p>
           </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="feature-card text-center h-100">
-            <i class="fa fa-rupee feature-icon"></i>
-            <h4 class="mb-3">Affordable Solution</h4>
-            <p>Get essential features at 1/10th the cost of expensive platforms. Perfect for budget-conscious societies.</p>
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="feature-card text-center h-100" style="border: 2px solid var(--light-teal);">
+            <i class="fa fa-bullhorn feature-icon" style="color: var(--light-teal);"></i>
+            <h4 class="mb-3">Notice Generation & Sharing</h4>
+            <p>Create and share important notices with residents instantly. Digital notice board accessible to all residents.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coming Soon Features -->
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="text-center mb-4" style="color: var(--dark-teal);">Coming Soon</h3>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="feature-card text-center h-100" style="opacity: 0.8; border: 2px dashed var(--dark-teal);">
+            <i class="fa fa-credit-card feature-icon" style="color: var(--dark-teal);"></i>
+            <h4 class="mb-3">Maintenance Payment</h4>
+            <p>Online payment gateway integration for seamless maintenance fee collection and automated receipts.</p>
           </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="feature-card text-center h-100">
-            <i class="fa fa-users feature-icon"></i>
-            <h4 class="mb-3">Easy Resident Management</h4>
-            <p>Simple resident directory and contact management. No complicated onboarding - start using immediately.</p>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="feature-card text-center h-100" style="opacity: 0.8; border: 2px dashed var(--dark-teal);">
+            <i class="fa fa-eye feature-icon" style="color: var(--dark-teal);"></i>
+            <h4 class="mb-3">Visitor Management</h4>
+            <p>Digital visitor entry system with pre-approval, visitor logs, and security notifications for enhanced safety.</p>
           </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="feature-card text-center h-100">
-            <i class="fa fa-mobile feature-icon"></i>
-            <h4 class="mb-3">Mobile-First Design</h4>
-            <p>Works perfectly on smartphones. No expensive tablets or hardware required - use what you already have.</p>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="feature-card text-center h-100" style="opacity: 0.8; border: 2px dashed var(--dark-teal);">
+            <i class="fa fa-swimming-pool feature-icon" style="color: var(--dark-teal);"></i>
+            <h4 class="mb-3">Amenity Management</h4>
+            <p>Booking system for common amenities like gym, pool, party hall with availability calendar and usage tracking.</p>
           </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="feature-card text-center h-100" style="opacity: 0.8; border: 2px dashed var(--dark-teal);">
+            <i class="fa fa-comments feature-icon" style="color: var(--dark-teal);"></i>
+            <h4 class="mb-3">Community Management</h4>
+            <p>Community forum, event planning, complaint management, and resident engagement tools for better community living.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Download Section -->
+  <section class="py-5" style="background: var(--very-light-teal);">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center mb-4">
+          <h2 class="section-title">Download FlatConnect App</h2>
+          <p class="text-muted">Get started with apartment management in minutes. Choose your platform:</p>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="app-download-card text-center p-4 bg-white rounded shadow-sm h-100 d-flex flex-column">
+            <i class="fa fa-android text-success mb-3" style="font-size: 3em;"></i>
+            <h4>Android Users</h4>
+            <p class="text-muted mb-3 flex-grow-1">Download from Google Play Store</p>
+            <a href="https://play.google.com/store/apps/details?id=com.flatconnect.flatconnect_app" 
+               class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+              <i class="fa fa-android mr-2"></i>Get Android App
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="app-download-card text-center p-4 bg-white rounded shadow-sm h-100 d-flex flex-column">
+            <i class="fa fa-globe text-primary mb-3" style="font-size: 3em;"></i>
+            <h4>iOS & Web Users</h4>
+            <p class="text-muted mb-3 flex-grow-1">Access via web browser</p>
+            <a href="https://app.flatconnect.in/" 
+               class="btn btn-outline-primary btn-lg" target="_blank" rel="noopener">
+              <i class="fa fa-globe mr-2"></i>Open Web App
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="app-download-card text-center p-4 bg-white rounded shadow-sm h-100 d-flex flex-column">
+            <i class="fa fa-phone mb-3" style="font-size: 3em; color: var(--light-teal);"></i>
+            <h4>Need Help?</h4>
+            <p class="text-muted mb-3 flex-grow-1">Get live demo & assistance</p>
+            <a href="tel:+919945342325" 
+               class="btn btn-lg" style="background: var(--light-teal); color: white; border: none;">
+              <i class="fa fa-phone mr-2"></i>Get Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row mt-4">
+        <div class="col-lg-12 text-center">
+          <p class="text-muted"><small>Works on all devices • No installation required for web version • Free to download • Call for live demo</small></p>
         </div>
       </div>
     </div>
@@ -564,20 +881,20 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <h2 class="section-title text-center">Why Choose FlatConnect Over Expensive Platforms?</h2>
+          <h2 class="section-title text-center">Complete Society Management Solution</h2>
           <div class="row">
             <div class="col-md-6">
               <ul class="benefits-list">
-                <li><i class="fa fa-check check-icon"></i> <strong>Affordable:</strong> 90% cheaper than MyGate or NoBroker Hood</li>
-                <li><i class="fa fa-check check-icon"></i> <strong>Simple Setup:</strong> Start using in 30 minutes, not 30 days</li>
-                <li><i class="fa fa-check check-icon"></i> <strong>No Training Required:</strong> Intuitive design anyone can use</li>
+                <li><i class="fa fa-check check-icon"></i> <strong>Finance Management:</strong> Complete maintenance & expense tracking</li>
+                <li><i class="fa fa-check check-icon"></i> <strong>Free Core Features:</strong> Resident directory & notice sharing</li>
+                <li><i class="fa fa-check check-icon"></i> <strong>Future Ready:</strong> Payment gateway & visitor management coming soon</li>
               </ul>
             </div>
             <div class="col-md-6">
               <ul class="benefits-list">
-                <li><i class="fa fa-check check-icon"></i> <strong>Small Society Focused:</strong> Perfect for 8-200 flat communities</li>
-                <li><i class="fa fa-check check-icon"></i> <strong>Replace Paper Systems:</strong> Digital upgrade from diary-based management</li>
-                <li><i class="fa fa-check check-icon"></i> <strong>Local Support:</strong> Personal assistance when you need it</li>
+                <li><i class="fa fa-check check-icon"></i> <strong>Multi-Platform:</strong> Android app & web access for all devices</li>
+                <li><i class="fa fa-check check-icon"></i> <strong>Affordable:</strong> Essential features at fraction of competitor costs</li>
+                <li><i class="fa fa-check check-icon"></i> <strong>Growing Platform:</strong> Regular updates with new features</li>
               </ul>
             </div>
           </div>
@@ -592,9 +909,163 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <div class="cta-section">
-            <h3 class="mb-4">Ready to Go Digital Without Breaking the Bank?</h3>
-            <p class="mb-4">Join small societies who've upgraded from paper diaries to smart digital management. No expensive setup fees, no complex training required.</p>
-            <a href="#contact" class="btn btn-light btn-lg">Start Free Trial</a>
+            <h3 class="mb-4">Ready for Complete Society Management?</h3>
+            <p class="mb-4">Start with finance management and free features, with exciting updates like payment gateway and visitor management coming soon. Experience the future of apartment management today.</p>
+            <div class="download-buttons">
+              <a href="https://play.google.com/store/apps/details?id=com.flatconnect.flatconnect_app" target="_blank" class="btn-download">
+                <i class="fa fa-android"></i>
+                <div class="download-text">
+                  <small>Download on</small>
+                  <span>Google Play</span>
+                </div>
+              </a>
+              <a href="https://app.flatconnect.in/" target="_blank" class="btn-download">
+                <i class="fa fa-apple"></i>
+                <div class="download-text">
+                  <small>Open on</small>
+                  <span>iOS/Web</span>
+                </div>
+              </a>
+              <a href="tel:+919945342325" class="btn-demo">
+                <i class="fa fa-phone"></i>
+                <div class="download-text">
+                  <small>Get Live</small>
+                  <span>Demo</span>
+                </div>
+              </a>
+              <a href="#contact" class="btn-learn-more">
+                <i class="fa fa-envelope"></i>
+                <div class="download-text">
+                  <small>Get in</small>
+                  <span>Touch</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-5" id="faq">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2 class="section-title text-center mb-5">Frequently Asked Questions</h2>
+          
+          <div class="accordion" id="faqAccordion">
+            <!-- App Availability FAQ -->
+            <div class="card mb-3">
+              <div class="card-header" id="faq1">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#answer1" aria-expanded="true" aria-controls="answer1">
+                    Is FlatConnect available as an app?
+                  </button>
+                </h5>
+              </div>
+              <div id="answer1" class="collapse show" aria-labelledby="faq1" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Yes! FlatConnect is available as an Android app on Google Play Store and as a web app for iOS/browser users. You can download the Android app or access the web version at app.flatconnect.in.
+                </div>
+              </div>
+            </div>
+
+            <!-- Platform Compatibility FAQ -->
+            <div class="card mb-3">
+              <div class="card-header" id="faq2">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer2" aria-expanded="false" aria-controls="answer2">
+                    Can iPhone users use FlatConnect?
+                  </button>
+                </h5>
+              </div>
+              <div id="answer2" class="collapse" aria-labelledby="faq2" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Absolutely! iPhone users can access FlatConnect through our web app at app.flatconnect.in. It works perfectly on Safari and all modern browsers, providing the same features as the Android app.
+                </div>
+              </div>
+            </div>
+
+            <!-- Free Download FAQ -->
+            <div class="card mb-3">
+              <div class="card-header" id="faq3">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer3" aria-expanded="false" aria-controls="answer3">
+                    Is the FlatConnect app free to download?
+                  </button>
+                </h5>
+              </div>
+              <div id="answer3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Yes, FlatConnect is completely free to download from Google Play Store. The web app is also free to use. We offer affordable subscription plans for societies, not individual users.
+                </div>
+              </div>
+            </div>
+
+            <!-- App Features FAQ -->
+            <div class="card mb-3">
+              <div class="card-header" id="faq4">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer4" aria-expanded="false" aria-controls="answer4">
+                    What features are available in FlatConnect?
+                  </button>
+                </h5>
+              </div>
+              <div id="answer4" class="collapse" aria-labelledby="faq4" data-parent="#faqAccordion">
+                <div class="card-body">
+                  FlatConnect offers Finance Management (maintenance tracking, expense tracking, digital ledger), Free Features (resident directory, notice generation), and upcoming features like payment gateway, visitor management, amenity booking, and community management tools.
+                </div>
+              </div>
+            </div>
+
+            <!-- Free Features FAQ -->
+            <div class="card mb-3">
+              <div class="card-header" id="faq5">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer5" aria-expanded="false" aria-controls="answer5">
+                    Which features are free to use?
+                  </button>
+                </h5>
+              </div>
+              <div id="answer5" class="collapse" aria-labelledby="faq5" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Resident Directory and Notice Generation & Sharing are completely free features that all societies can use without any cost. These essential community management tools will always remain free.
+                </div>
+              </div>
+            </div>
+
+            <!-- Coming Soon FAQ -->
+            <div class="card mb-3">
+              <div class="card-header" id="faq6">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer6" aria-expanded="false" aria-controls="answer6">
+                    What new features are coming soon?
+                  </button>
+                </h5>
+              </div>
+              <div id="answer6" class="collapse" aria-labelledby="faq6" data-parent="#faqAccordion">
+                <div class="card-body">
+                  We're actively developing Maintenance Payment gateway, Visitor Management system, Amenity Management with booking, and Community Management tools. These features will make FlatConnect a complete society management solution.
+                </div>
+              </div>
+            </div>
+
+            <!-- Demo FAQ -->
+            <div class="card mb-3">
+              <div class="card-header" id="faq7">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer7" aria-expanded="false" aria-controls="answer7">
+                    Can I get a live demo before downloading?
+                  </button>
+                </h5>
+              </div>
+              <div id="answer7" class="collapse" aria-labelledby="faq7" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Absolutely! Click the "Get Live Demo" button anywhere on the page to call us directly at +91-9945342325. We'll provide a personalized walkthrough of FlatConnect features and help you understand how it can benefit your society.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
