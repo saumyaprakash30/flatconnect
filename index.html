@@ -1185,6 +1185,8 @@
                 <div class="form-group">
                   <label for="phone" style="color: var(--text-dark); font-weight: 600;">Phone Number *</label>
                   <input type="tel" class="form-control" id="phone" name="entry.691119999" required
+                         pattern="^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
+                         title="Please enter a valid phone number (e.g., +91 9876543210, (987) 654-3210, 987-654-3210)"
                          style="border: 2px solid var(--very-light-teal); border-radius: 8px; padding: 12px; font-size: 16px;"
                          placeholder="+91 9876543210">
                 </div>
@@ -1271,6 +1273,16 @@
 
     // Form submission handler
     function submitForm() {
+      // Validate phone number before submission
+      const phoneInput = document.getElementById('phone');
+      const phonePattern = /^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
+      
+      if (!phonePattern.test(phoneInput.value)) {
+        alert('Please enter a valid phone number (e.g., +91 9876543210, (987) 654-3210, 987-654-3210)');
+        phoneInput.focus();
+        return false; // Prevent form submission
+      }
+      
       // Show success message after a brief delay
       setTimeout(function() {
         document.getElementById('contactForm').style.display = 'none';
