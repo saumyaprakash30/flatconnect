@@ -37,9 +37,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- SEO Meta Tags -->
-  <title>FlatConnect - Digitalizing Small Societies & Individual Apartments | Untapped Market Solution</title>
-  <meta name="description" content="FlatConnect targets the untapped market of small societies (8-200 flats) and individual apartments. Digitalize traditional diary-based management with affordable modern solutions. Android app & web platform.">
-  <meta name="keywords" content="small society management, individual apartment digitalization, untapped market, affordable apartment management, traditional society upgrade, diary-based to digital, small community solutions">
+  <title>FlatConnect - Digitalizing Small Societies & Individual Apartments | Affordable Management Solution</title>
+  <meta name="description" content="FlatConnect serves small societies (8-200 flats) and individual apartments. Digitalize traditional diary-based management with affordable modern solutions. Android app & web platform.">
+  <meta name="keywords" content="small society management, individual apartment digitalization, affordable apartment management, traditional society upgrade, diary-based to digital, small community solutions">
   <meta name="author" content="Saumya Prakash">
   <meta name="robots" content="index, follow">
   
@@ -693,7 +693,7 @@
           </div>
           <h1 class="display-4 font-weight-bold mb-4">FlatConnect</h1>
           <p class="lead mb-4">Digitalizing Small Societies & Individual Apartments</p>
-          <p class="mb-4">Targeting the untapped market of 8-200 flat communities and individual apartment owners. Bringing affordable, modern management solutions to societies still using traditional diary-based systems. Available on Android, iOS & Web.</p>
+          <p class="mb-4">Serving 8-200 flat communities and individual apartment owners. Bringing affordable, modern management solutions to societies still using traditional diary-based systems. Available on Android, iOS & Web.</p>
           
           <div class="download-buttons">
             <a href="https://play.google.com/store/apps/details?id=com.flatconnect.flatconnect_app" target="_blank" class="btn-download">
@@ -1160,6 +1160,79 @@
           </div>
         </div>
       </div>
+      
+      <!-- Contact Form Section -->
+      <div class="row mt-5">
+        <div class="col-lg-8 mx-auto">
+          <div class="text-center mb-4">
+            <h3 style="color: var(--primary-teal);">Get in Touch</h3>
+            <p class="text-muted">Fill out the form below and we'll get back to you soon!</p>
+          </div>
+          
+          <div class="card" style="border: none; box-shadow: 0 4px 15px rgba(0, 128, 128, 0.1); border-radius: 12px;">
+            <div class="card-body p-4">
+              <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLScFdpYsZkwfCutZBK_dmKycRe98-Ge1zXxp98oNDCxKsmzFDA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitForm()">
+                
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="name" style="color: var(--text-dark); font-weight: 600;">Name</label>
+                  <input type="text" class="form-control" id="name" name="entry.644101322" 
+                         style="border: 2px solid var(--very-light-teal); border-radius: 8px; padding: 12px; font-size: 16px;"
+                         placeholder="Your full name">
+                </div>
+                
+                <!-- Phone Field -->
+                <div class="form-group">
+                  <label for="phone" style="color: var(--text-dark); font-weight: 600;">Phone Number *</label>
+                  <input type="tel" class="form-control" id="phone" name="entry.691119999" required
+                         style="border: 2px solid var(--very-light-teal); border-radius: 8px; padding: 12px; font-size: 16px;"
+                         placeholder="+91 9876543210">
+                </div>
+                
+                <!-- Society/Apartment Name Field -->
+                <div class="form-group">
+                  <label for="society" style="color: var(--text-dark); font-weight: 600;">Society/Apartment Name</label>
+                  <input type="text" class="form-control" id="society" name="entry.255600164" 
+                         style="border: 2px solid var(--very-light-teal); border-radius: 8px; padding: 12px; font-size: 16px;"
+                         placeholder="Your society or apartment name">
+                </div>
+                
+                <!-- Number of Flats -->
+                <div class="form-group">
+                  <label for="flats" style="color: var(--text-dark); font-weight: 600;">Pin Code</label>
+                  <input type="number" class="form-control" id="flats" name="entry.1604381143" 
+                         style="border: 2px solid var(--very-light-teal); border-radius: 8px; padding: 12px; font-size: 16px;"
+                         placeholder="pincode of your society">
+                </div>
+                
+                <!-- Message Field -->
+                <div class="form-group">
+                  <label for="message" style="color: var(--text-dark); font-weight: 600;">Additional Query (Optional)</label>
+                  <textarea class="form-control" id="message" name="entry.1009332065" rows="4" 
+                            style="border: 2px solid var(--very-light-teal); border-radius: 8px; padding: 12px; font-size: 16px; resize: vertical;"
+                            placeholder="Tell us about your apartment/society, current management system, or any specific questions you have..."></textarea>
+                </div>
+                
+                <!-- Submit Button -->
+                <div class="text-center mt-4">
+                  <button type="submit" class="btn btn-lg px-5 py-3" 
+                          style="background: var(--primary-teal); color: white; border: none; border-radius: 25px; font-weight: 600; font-size: 18px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 128, 128, 0.3);"
+                          onmouseover="this.style.background='var(--dark-teal)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(0, 128, 128, 0.4)'"
+                          onmouseout="this.style.background='var(--primary-teal)'; this.style.transform='translateY(0px)'; this.style.boxShadow='0 4px 15px rgba(0, 128, 128, 0.3)'">
+                    <i class="fa fa-paper-plane mr-2"></i>Send Message
+                  </button>
+                </div>
+              </form>
+              
+              <!-- Success Message -->
+              <div id="successMessage" class="alert alert-success mt-4" style="display: none; border-radius: 8px; border: none; background: linear-gradient(135deg, var(--light-teal), var(--primary-teal)); color: white;">
+                <i class="fa fa-check-circle mr-2"></i>
+                <strong>Thank you!</strong> Your message has been sent successfully. We'll get back to you soon!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -1194,6 +1267,40 @@
           }, 1000);
         }
       });
+    });
+
+    // Form submission handler
+    function submitForm() {
+      // Show success message after a brief delay
+      setTimeout(function() {
+        document.getElementById('contactForm').style.display = 'none';
+        document.getElementById('successMessage').style.display = 'block';
+        
+        // Scroll to success message
+        document.getElementById('successMessage').scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'center' 
+        });
+        
+        // Track form submission in Google Analytics
+        if (typeof gtag === 'function') {
+          gtag('event', 'form_submit', {
+            'event_category': 'Contact',
+            'event_label': 'Contact Form Submission'
+          });
+        }
+      }, 1000);
+      
+      return true;
+    }
+  </script>
+
+  <!-- Hidden iframe for form submission -->
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='#contact';}"></iframe>
+  <script type="text/javascript">var submitted=false;</script>
+  <script type="text/javascript">
+    $('#contactForm').on('submit',function(e){
+      submitted=true;
     });
   </script>
 
