@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- SEO Meta Tags -->
+  <title>Delete FlatConnect Account | Account Deletion Request</title>
+  <meta name="description" content="Request deletion of your FlatConnect account and associated data. Learn about our data retention policy and deletion process.">
+  <meta name="robots" content="noindex, nofollow">
+  
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  <!-- Custom Fonts -->
+  <script src="https://use.fontawesome.com/4dfd1d7bab.js"></script>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+
+  <!-- Custom favicon -->
+  <link rel="shortcut icon" href="public/flatConnectIcon.png" type="image/x-icon">
+  <link rel="icon" href="public/flatConnectIcon.png" type="image/png">
+
+  <style>
+    :root {
+      --primary-teal: #008080;
+      --light-teal: #20b2aa;
+      --dark-teal: #006666;
+      --very-light-teal: #f0f9f8;
+      --text-dark: #2c3e50;
+      --text-light: #546e7a;
+      --text-muted: #6c757d;
+      --white: #ffffff;
+      --danger: #dc3545;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      font-size: 16px;
+      background-color: var(--very-light-teal);
+    }
+    
+    .navbar {
+      background: var(--white) !important;
+      box-shadow: 0 2px 10px rgba(0, 128, 128, 0.1);
+      z-index: 1050;
+      padding: 1rem 0;
+    }
+    
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--primary-teal) !important;
+    }
+    
+    .navbar-brand img {
+      vertical-align: middle;
+    }
+    
+    .main-content {
+      padding: 0 0 4rem 0;
+      min-height: 80vh;
+    }
+    
+    .page-header {
+      background: linear-gradient(135deg, var(--danger) 0%, #c82333 100%);
+      color: var(--white);
+      padding: 6rem 0 3rem 0;
+      margin-bottom: 3rem;
+    }
+    
+    .page-header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    
+    .page-header p {
+      font-size: 1.2rem;
+      color: rgba(255,255,255,0.9);
+    }
+    
+    .info-section {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 15px rgba(0, 128, 128, 0.1);
+    }
+    
+    .info-section h3 {
+      color: var(--primary-teal);
+      margin-bottom: 1rem;
+    }
+    
+    .deletion-form {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 128, 128, 0.1);
+    }
+    
+    .form-control {
+      border: 2px solid var(--very-light-teal);
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 16px;
+      min-height: 48px;
+    }
+    
+    .form-control:focus {
+      border-color: var(--primary-teal);
+      box-shadow: 0 0 0 0.2rem rgba(0, 128, 128, 0.25);
+    }
+    
+    select.form-control {
+      height: 48px;
+      padding: 10px 12px;
+    }
+    
+    .btn-danger {
+      background: var(--danger);
+      border: none;
+      color: var(--white);
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-danger:hover {
+      background: #c82333;
+      transform: translateY(-2px);
+      color: var(--white);
+    }
+    
+    .btn-secondary {
+      background: var(--text-muted);
+      border: none;
+      color: var(--white);
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    
+    .btn-secondary:hover {
+      background: #5a6268;
+      transform: translateY(-2px);
+      color: var(--white);
+      text-decoration: none;
+    }
+    
+    .warning-box {
+      background: #fff3cd;
+      border: 1px solid #ffeaa7;
+      color: #856404;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+    }
+    
+    .data-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .data-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--very-light-teal);
+    }
+    
+    .data-list li:last-child {
+      border-bottom: none;
+    }
+    
+    .data-list i {
+      color: var(--primary-teal);
+      margin-right: 8px;
+    }
+    
+    footer {
+      background: var(--text-dark);
+      color: var(--white);
+      padding: 2rem 0;
+      margin-top: 3rem;
+    }
+    
+    footer a {
+      color: var(--light-teal);
+      text-decoration: none;
+    }
+    
+    footer a:hover {
+      color: var(--primary-teal);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="public/flatConnectIcon.png" alt="FlatConnect Logo" style="height: 32px; width: 32px; margin-right: 8px;">
+        <span>FlatConnect</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container text-center">
+      <h1><i class="fa fa-trash mr-3"></i>Delete FlatConnect Account</h1>
+      <p>Request permanent deletion of your account and associated data</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          
+          <!-- Information Section -->
+          <div class="info-section">
+            <h3><i class="fa fa-info-circle mr-2"></i>Before You Delete Your Account</h3>
+            <p><strong>Please note:</strong> Account deletion is permanent and cannot be undone. Once your deletion request is processed:</p>
+            
+            <h5 class="mt-3 mb-2">Data That Will Be Deleted:</h5>
+            <ul class="data-list">
+              <li><i class="fa fa-check"></i>Your personal profile information (name, photo, contact details)</li>
+              <li><i class="fa fa-check"></i>Account credentials and login information</li>
+              <li><i class="fa fa-check"></i>Personal preferences and app settings</li>
+              <li><i class="fa fa-check"></i>Direct messages and private communications</li>
+            </ul>
+            
+            <h5 class="mt-3 mb-2">Data That Will Be Anonymized (Mapped to "Deleted User"):</h5>
+            <ul class="data-list">
+              <li><i class="fa fa-user-times text-warning"></i>Society notices and announcements you created</li>
+              <li><i class="fa fa-user-times text-warning"></i>Expense records and financial transactions you added</li>
+              <li><i class="fa fa-user-times text-warning"></i>Maintenance requests and complaints you submitted</li>
+              <li><i class="fa fa-user-times text-warning"></i>Comments and replies on community posts</li>
+              <li><i class="fa fa-user-times text-warning"></i>Voting records and poll responses</li>
+              <li><i class="fa fa-user-times text-warning"></i>Society management data and records you created</li>
+            </ul>
+            
+            <h5 class="mt-3 mb-2">Data That May Be Retained:</h5>
+            <ul class="data-list">
+              <li><i class="fa fa-exclamation-triangle text-warning"></i>Legal compliance records (up to 7 years as required by law)</li>
+              <li><i class="fa fa-exclamation-triangle text-warning"></i>Anonymized analytics data for service improvement</li>
+              <li><i class="fa fa-exclamation-triangle text-warning"></i>Transaction records for accounting purposes (if applicable)</li>
+            </ul>
+            
+            <div class="warning-box mt-3">
+              <strong><i class="fa fa-info-circle mr-2"></i>Important:</strong> While your personal information will be permanently deleted, content you created (notices, expenses, etc.) will remain in the system but will be attributed to "Deleted User" to maintain data integrity for other residents. This ensures society records remain complete while protecting your privacy.
+            </div>
+            
+            <div class="warning-box mt-2">
+              <strong><i class="fa fa-clock-o mr-2"></i>Processing Time:</strong> Account deletion requests are typically processed within 30 days of submission. You will receive email confirmation once the deletion is complete.
+            </div>
+          </div>
+
+          <!-- Deletion Form -->
+          <div class="deletion-form">
+            <h3 class="mb-4"><i class="fa fa-form mr-2"></i>Account Deletion Request Form</h3>
+            
+            <form id="deletionForm" action="https://docs.google.com/forms/d/e/1FAIpQLSc2uQMipmJEbxmuEuWat-MCq0MOTXMCNcmi_6h_oHhGXObAEw/formResponse" method="POST" target="hidden_iframe" onsubmit="submitDeletionForm()">
+              
+              <!-- Name Field -->
+              <div class="form-group">
+                <label for="name" style="color: var(--text-dark); font-weight: 600;">Full Name *</label>
+                <input type="text" class="form-control" id="name" name="entry.851493095" required 
+                       placeholder="Enter your full name as registered with FlatConnect">
+              </div>
+              
+              <!-- Phone Field -->
+              <div class="form-group">
+                <label for="phone" style="color: var(--text-dark); font-weight: 600;">Phone Number *</label>
+                <input type="tel" class="form-control" id="phone" name="entry.844152174" required
+                       pattern="^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
+                       title="Please enter a valid phone number"
+                       placeholder="Phone number associated with your FlatConnect account">
+              </div>
+              
+              <!-- Email Field -->
+              <div class="form-group">
+                <label for="email" style="color: var(--text-dark); font-weight: 600;">Email Address (Optional)</label>
+                <input type="email" class="form-control" id="email" name="entry.652578734" 
+                       placeholder="Email address for deletion confirmation">
+              </div>
+              
+              <!-- Reason Field -->
+              <div class="form-group">
+                <label for="reason" style="color: var(--text-dark); font-weight: 600;">Reason for Deletion *</label>
+                <select class="form-control" id="reason" name="entry.1724889640" required>
+                  <option value="">Please select a reason</option>
+                  <option value="No longer need the service">No longer need the service</option>
+                  <option value="Privacy concerns">Privacy concerns</option>
+                  <option value="Found alternative solution">Found alternative solution</option>
+                  <option value="Too complicated to use">Too complicated to use</option>
+                  <option value="Missing features">Missing features I need</option>
+                  <option value="Cost concerns">Cost concerns</option>
+                  <option value="Account security issues">Account security issues</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              
+              <!-- Additional Comments -->
+              <div class="form-group">
+                <label for="comments" style="color: var(--text-dark); font-weight: 600;">Additional Comments (Optional)</label>
+                <textarea class="form-control" id="comments" name="entry.302675795" rows="4" 
+                          placeholder="Any additional details about your deletion request or feedback for FlatConnect..."></textarea>
+              </div>
+              
+              <!-- Confirmation Checkbox -->
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="confirmDeletion" required>
+                  <label class="form-check-label" for="confirmDeletion" style="color: var(--text-dark);">
+                    <strong>I understand that this action is permanent and cannot be undone. I confirm that I want to delete my FlatConnect account and all associated data.</strong>
+                  </label>
+                </div>
+              </div>
+              
+              <!-- Submit Buttons -->
+              <div class="text-center mt-4">
+                <a href="index.html" class="btn btn-secondary mr-3">
+                  <i class="fa fa-arrow-left mr-2"></i>Cancel
+                </a>
+                <button type="submit" class="btn btn-danger" id="submitBtn">
+                  <i class="fa fa-trash mr-2"></i>Delete My Account
+                </button>
+              </div>
+            </form>
+            
+            <!-- Success Message -->
+            <div id="successMessage" class="alert alert-success mt-4" style="display: none; border-radius: 8px;">
+              <i class="fa fa-check-circle mr-2"></i>
+              <strong>Deletion Request Submitted!</strong> Your account deletion request has been received. You will receive an email confirmation within 24 hours, and your account will be deleted within 30 days.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2025 FlatConnect by Saumya Prakash. All rights reserved.</p>
+      <p class="mb-0">📧 contact@flatconnect.in | Need help? <a href="index.html#contact">Contact us</a></p>
+    </div>
+  </footer>
+
+  <!-- jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <!-- Form submission handler -->
+  <script>
+    function submitDeletionForm() {
+      // Validate phone number before submission
+      const phoneInput = document.getElementById('phone');
+      const phonePattern = /^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
+      
+      if (!phonePattern.test(phoneInput.value)) {
+        alert('Please enter a valid phone number');
+        phoneInput.focus();
+        return false;
+      }
+      
+      // Show success message after submission
+      setTimeout(function() {
+        document.getElementById('deletionForm').style.display = 'none';
+        document.getElementById('successMessage').style.display = 'block';
+        
+        // Scroll to success message
+        document.getElementById('successMessage').scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'center' 
+        });
+      }, 1000);
+      
+      return true;
+    }
+  </script>
+
+  <!-- Hidden iframe for form submission -->
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+</body>
+
+</html>
