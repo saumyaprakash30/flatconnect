@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CE10NW4DF3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CE10NW4DF3');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Dynamic SEO Meta Tags - Will be populated by JavaScript -->
+  <title id="page-title">FlatConnect Blog Post</title>
+  <meta name="description" content="" id="page-description">
+  <meta name="keywords" content="" id="page-keywords">
+  <meta name="author" content="Saumya Prakash">
+  <meta name="robots" content="index, follow">
+
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:title" content="" id="og-title">
+  <meta property="og:description" content="" id="og-description">
+  <meta property="og:image" content="https://flatconnect.in/public/flatConnectIcon.png">
+  <meta property="og:url" content="" id="og-url">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="FlatConnect">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="" id="twitter-title">
+  <meta name="twitter:description" content="" id="twitter-description">
+  <meta name="twitter:image" content="https://flatconnect.in/public/flatConnectIcon.png">
+
+  <!-- Article Schema - Will be populated by JavaScript -->
+  <script type="application/ld+json" id="article-schema">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "",
+    "description": "",
+    "image": "https://flatconnect.in/public/flatConnectIcon.png",
+    "author": {
+      "@type": "Person",
+      "name": "Saumya Prakash"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "FlatConnect",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://flatconnect.in/public/flatConnectIcon.png"
+      }
+    },
+    "datePublished": "",
+    "dateModified": "",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": ""
+    },
+    "keywords": []
+  }
+  </script>
+
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  <!-- Custom Fonts -->
+  <script src="https://use.fontawesome.com/4dfd1d7bab.js"></script>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+
+  <!-- Marked.js for Markdown parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  
+  <!-- Highlight.js for syntax highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+  <!-- Custom favicon -->
+  <link rel="shortcut icon" href="../../public/flatConnectIcon.png" type="image/x-icon">
+
+  <style>
+    :root {
+      --primary-teal: #008080;
+      --light-teal: #20b2aa;
+      --dark-teal: #006666;
+      --very-light-teal: #f0f9f8;
+      --text-dark: #2c3e50;
+      --text-light: #546e7a;
+      --text-muted: #6c757d;
+      --white: #ffffff;
+      --light-gray: #f8f9fa;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      font-size: 16px;
+      padding-top: 80px;
+    }
+
+    .navbar {
+      background: var(--white) !important;
+      box-shadow: 0 2px 10px rgba(0, 128, 128, 0.1);
+      z-index: 1050;
+      padding: 1rem 0;
+    }
+    
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--primary-teal) !important;
+    }
+    
+    .nav-link {
+      color: var(--text-dark) !important;
+      font-weight: 500;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    
+    .nav-link:hover {
+      color: var(--primary-teal) !important;
+    }
+
+    .article-header {
+      background: linear-gradient(135deg, var(--primary-teal) 0%, var(--dark-teal) 100%);
+      color: var(--white);
+      padding: 4rem 0;
+    }
+
+    .article-header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .article-meta {
+      color: rgba(255,255,255,0.9);
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .article-meta i {
+      margin-right: 8px;
+    }
+
+    .article-content {
+      background: var(--white);
+      margin-top: -2rem;
+      border-radius: 20px 20px 0 0;
+      box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 10;
+    }
+
+    .article-body {
+      padding: 3rem 0;
+    }
+
+    #markdown-content h1 {
+      color: var(--text-dark);
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      font-size: 2.2rem;
+      border-bottom: 3px solid var(--primary-teal);
+      padding-bottom: 0.5rem;
+    }
+
+    #markdown-content h2 {
+      color: var(--text-dark);
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    #markdown-content h3 {
+      color: var(--primary-teal);
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+
+    #markdown-content h4 {
+      color: var(--text-dark);
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    #markdown-content p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+      color: var(--text-light);
+    }
+
+    #markdown-content ul, #markdown-content ol {
+      margin-bottom: 1.5rem;
+      padding-left: 2rem;
+    }
+
+    #markdown-content li {
+      margin-bottom: 0.5rem;
+      color: var(--text-light);
+      font-size: 1.1rem;
+    }
+
+    #markdown-content strong {
+      color: var(--text-dark);
+      font-weight: 600;
+    }
+
+    #markdown-content blockquote {
+      background: var(--very-light-teal);
+      border-left: 4px solid var(--primary-teal);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+    }
+
+    #markdown-content blockquote p {
+      margin-bottom: 1rem;
+      color: var(--text-dark);
+    }
+
+    #markdown-content blockquote p:last-child {
+      margin-bottom: 0;
+    }
+
+    #markdown-content code {
+      background: var(--light-gray);
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 0.9em;
+      color: var(--primary-teal);
+    }
+
+    #markdown-content pre {
+      background: var(--light-gray);
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+
+    #markdown-content pre code {
+      background: none;
+      padding: 0;
+      border-radius: 0;
+      color: var(--text-dark);
+    }
+
+    #markdown-content hr {
+      border: none;
+      height: 2px;
+      background: var(--primary-teal);
+      margin: 3rem 0;
+      border-radius: 1px;
+    }
+
+    #markdown-content a {
+      color: var(--primary-teal);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    #markdown-content a:hover {
+      color: var(--dark-teal);
+      text-decoration: underline;
+    }
+
+    .cta-section {
+      background: var(--primary-teal);
+      color: var(--white);
+      padding: 3rem 0;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .btn-cta {
+      background: var(--white);
+      color: var(--primary-teal);
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 10px 10px 10px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+      color: var(--primary-teal);
+      text-decoration: none;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 4rem 0;
+      color: var(--text-muted);
+    }
+
+    .error {
+      text-align: center;
+      padding: 4rem 0;
+      color: #dc3545;
+    }
+
+    footer {
+      background: var(--text-dark);
+      color: var(--white);
+      padding: 3rem 0;
+    }
+    
+    footer a {
+      color: var(--light-teal);
+      text-decoration: none;
+    }
+    
+    footer a:hover {
+      color: var(--primary-teal);
+      text-decoration: underline;
+    }
+
+    /* Table of Contents */
+    .table-of-contents {
+      background: var(--very-light-teal);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .table-of-contents h4 {
+      color: var(--primary-teal);
+      margin-bottom: 1rem;
+    }
+
+    .table-of-contents ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .table-of-contents li {
+      margin-bottom: 0.5rem;
+    }
+
+    .table-of-contents a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .table-of-contents a:hover {
+      color: var(--primary-teal);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" role="navigation">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="../../index.html" aria-label="FlatConnect Home">
+        <img src="../../public/flatConnectIcon.png" alt="FlatConnect Logo" style="height: 32px; width: 32px; margin-right: 8px;">
+        <span>FlatConnect</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Article Header -->
+  <header class="article-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 id="article-title">Loading...</h1>
+          <div class="article-meta" id="article-meta">
+            <i class="fa fa-spinner fa-spin"></i> Loading article...
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Article Content -->
+  <section class="article-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <article class="article-body">
+            <div id="loading" class="loading">
+              <i class="fa fa-spinner fa-spin fa-2x"></i>
+              <p>Loading article content...</p>
+            </div>
+            
+            <div id="error" class="error" style="display: none;">
+              <i class="fa fa-exclamation-triangle fa-2x"></i>
+              <p>Sorry, we couldn't load this article. Please try again later.</p>
+            </div>
+
+            <div id="table-of-contents" class="table-of-contents" style="display: none;">
+              <h4><i class="fa fa-list"></i> Table of Contents</h4>
+              <ul id="toc-list"></ul>
+            </div>
+
+            <div id="markdown-content"></div>
+
+            <!-- Call to Action Section -->
+            <div class="cta-section" id="cta-section" style="display: none;">
+              <div class="container">
+                <h3>Ready to Transform Your Society Management?</h3>
+                <p>Join thousands of satisfied communities across India who have already made the switch to digital management.</p>
+                <div class="mt-4">
+                  <a href="https://play.google.com/store/apps/details?id=com.flatconnect.flatconnect_app" target="_blank" class="btn-cta">
+                    <i class="fa fa-android mr-2"></i>Download FlatConnect App
+                  </a>
+                  <a href="../../index.html#contact" class="btn-cta">
+                    <i class="fa fa-phone mr-2"></i>Get Live Demo
+                  </a>
+                  <a href="https://app.flatconnect.in/" target="_blank" class="btn-cta">
+                    <i class="fa fa-globe mr-2"></i>Try Web Version
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2025 FlatConnect by Saumya Prakash. All rights reserved.</p>
+      <p class="mb-0">📧 contact@flatconnect.in | Built with ❤️ for modern communities</p>
+      <p class="mt-3">
+        <a href="../../privacy-policy.html">Privacy Policy</a> | 
+        <a href="../../terms-of-service.html">Terms of Service</a> | 
+        <a href="../../delete-account.html">Delete Account</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <script>
+    class MarkdownBlogRenderer {
+      constructor() {
+        this.metadata = {};
+        this.content = '';
+        this.slug = this.getSlugFromUrl();
+      }
+
+      getSlugFromUrl() {
+        // Extract slug from URL parameter or filename
+        const urlParams = new URLSearchParams(window.location.search);
+        const slug = urlParams.get('post');
+        if (slug) return slug;
+
+        // Fallback: try to extract from current filename
+        const path = window.location.pathname;
+        const filename = path.split('/').pop().replace('.html', '');
+        return filename;
+      }
+
+      async loadMarkdownPost() {
+        try {
+          const response = await fetch(`markdown/${this.slug}.md`);
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          const markdownText = await response.text();
+          this.parseMarkdownWithMetadata(markdownText);
+          this.renderPost();
+        } catch (error) {
+          console.error('Error loading markdown post:', error);
+          this.showError();
+        }
+      }
+
+      parseMarkdownWithMetadata(markdownText) {
+        // Extract frontmatter (metadata between ---)
+        const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
+        const match = markdownText.match(frontmatterRegex);
+
+        if (match) {
+          const frontmatter = match[1];
+          this.content = match[2];
+          
+          // Parse YAML-style frontmatter
+          this.metadata = this.parseFrontmatter(frontmatter);
+        } else {
+          // No frontmatter, use entire content as markdown
+          this.content = markdownText;
+          this.metadata = this.getDefaultMetadata();
+        }
+      }
+
+      parseFrontmatter(frontmatter) {
+        const metadata = {};
+        const lines = frontmatter.split('\n');
+        
+        lines.forEach(line => {
+          const colonIndex = line.indexOf(':');
+          if (colonIndex > 0) {
+            const key = line.substring(0, colonIndex).trim();
+            let value = line.substring(colonIndex + 1).trim();
+            
+            // Remove quotes if present
+            if ((value.startsWith('"') && value.endsWith('"')) || 
+                (value.startsWith("'") && value.endsWith("'"))) {
+              value = value.slice(1, -1);
+            }
+            
+            // Handle arrays (tags, keywords)
+            if (value.startsWith('[') && value.endsWith(']')) {
+              value = value.slice(1, -1).split(',').map(item => item.trim().replace(/"/g, ''));
+            }
+            
+            metadata[key] = value;
+          }
+        });
+        
+        return metadata;
+      }
+
+      getDefaultMetadata() {
+        return {
+          title: 'FlatConnect Blog Post',
+          description: 'Expert insights on apartment management and society administration.',
+          author: 'Saumya Prakash',
+          date: new Date().toISOString().split('T')[0],
+          category: 'General',
+          readTime: '5 min'
+        };
+      }
+
+      renderPost() {
+        // Hide loading, show content
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('cta-section').style.display = 'block';
+
+        // Update page title and meta tags
+        this.updatePageMetadata();
+
+        // Update header
+        document.getElementById('article-title').textContent = this.metadata.title;
+        document.getElementById('article-meta').innerHTML = `
+          <i class="fa fa-calendar"></i> ${this.formatDate(this.metadata.date)} &nbsp;&nbsp;
+          <i class="fa fa-user"></i> By ${this.metadata.author} &nbsp;&nbsp;
+          <i class="fa fa-tag"></i> ${this.metadata.category} &nbsp;&nbsp;
+          <i class="fa fa-clock-o"></i> ${this.metadata.readTime} read
+        `;
+
+        // Configure marked options
+        marked.setOptions({
+          highlight: function(code, lang) {
+            if (lang && hljs.getLanguage(lang)) {
+              return hljs.highlight(code, { language: lang }).value;
+            }
+            return hljs.highlightAuto(code).value;
+          },
+          breaks: true,
+          gfm: true
+        });
+
+        // Render markdown content
+        const htmlContent = marked.parse(this.content);
+        document.getElementById('markdown-content').innerHTML = htmlContent;
+
+        // Generate table of contents
+        this.generateTableOfContents();
+
+        // Track page view
+        this.trackPageView();
+      }
+
+      updatePageMetadata() {
+        const title = `${this.metadata.title} | FlatConnect Blog`;
+        const description = this.metadata.description || '';
+        const keywords = Array.isArray(this.metadata.keywords) ? 
+          this.metadata.keywords.join(', ') : this.metadata.keywords || '';
+        const url = `https://flatconnect.in/blog/post.html?post=${this.slug}`;
+
+        // Update title and meta tags
+        document.getElementById('page-title').textContent = title;
+        document.title = title;
+        document.getElementById('page-description').setAttribute('content', description);
+        document.getElementById('page-keywords').setAttribute('content', keywords);
+
+        // Update OpenGraph tags
+        document.getElementById('og-title').setAttribute('content', this.metadata.title);
+        document.getElementById('og-description').setAttribute('content', description);
+        document.getElementById('og-url').setAttribute('content', url);
+
+        // Update Twitter tags
+        document.getElementById('twitter-title').setAttribute('content', this.metadata.title);
+        document.getElementById('twitter-description').setAttribute('content', description);
+
+        // Update structured data
+        const schema = {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": this.metadata.title,
+          "description": description,
+          "image": "https://flatconnect.in/public/flatConnectIcon.png",
+          "author": {
+            "@type": "Person",
+            "name": this.metadata.author
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "FlatConnect",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://flatconnect.in/public/flatConnectIcon.png"
+            }
+          },
+          "datePublished": this.metadata.date,
+          "dateModified": this.metadata.date,
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": url
+          },
+          "keywords": Array.isArray(this.metadata.keywords) ? this.metadata.keywords : [keywords]
+        };
+
+        document.getElementById('article-schema').textContent = JSON.stringify(schema);
+      }
+
+      generateTableOfContents() {
+        const headings = document.querySelectorAll('#markdown-content h2, #markdown-content h3');
+        if (headings.length > 2) {
+          const tocList = document.getElementById('toc-list');
+          const tocContainer = document.getElementById('table-of-contents');
+          
+          tocList.innerHTML = '';
+          
+          headings.forEach((heading, index) => {
+            const id = `heading-${index}`;
+            heading.id = id;
+            
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = `#${id}`;
+            a.textContent = heading.textContent;
+            a.style.paddingLeft = heading.tagName === 'H3' ? '1rem' : '0';
+            
+            li.appendChild(a);
+            tocList.appendChild(li);
+          });
+          
+          tocContainer.style.display = 'block';
+        }
+      }
+
+      formatDate(dateString) {
+        const date = new Date(dateString);
+        return date.toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        });
+      }
+
+      showError() {
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('error').style.display = 'block';
+        document.getElementById('article-title').textContent = 'Article Not Found';
+        document.getElementById('article-meta').innerHTML = '<i class="fa fa-exclamation-triangle"></i> Unable to load article';
+      }
+
+      trackPageView() {
+        if (typeof gtag === 'function') {
+          gtag('event', 'page_view', {
+            'page_title': this.metadata.title,
+            'page_location': window.location.href,
+            'custom_parameter_1': 'blog_post_markdown',
+            'custom_parameter_2': this.metadata.category?.toLowerCase().replace(' ', '_')
+          });
+        }
+      }
+    }
+
+    // Initialize the blog renderer when page loads
+    document.addEventListener('DOMContentLoaded', () => {
+      const renderer = new MarkdownBlogRenderer();
+      renderer.loadMarkdownPost();
+
+      // Smooth scrolling for TOC links
+      $(document).on('click', 'a[href^="#"]', function(e) {
+        const target = $(this.getAttribute('href'));
+        if (target.length) {
+          e.preventDefault();
+          $('html, body').stop().animate({
+            scrollTop: target.offset().top - 100
+          }, 1000);
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

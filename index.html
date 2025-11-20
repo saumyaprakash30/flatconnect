@@ -644,6 +644,87 @@
       font-size: 1.5rem;
       margin-right: 10px;
     }
+
+    /* Blog Preview Cards */
+    .blog-preview-card {
+      background: var(--white);
+      border-radius: 15px;
+      padding: 2rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 8px 30px rgba(0, 128, 128, 0.1);
+      transition: all 0.3s ease;
+      border: 1px solid var(--very-light-teal);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-preview-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 128, 128, 0.2);
+    }
+
+    .blog-preview-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .blog-category {
+      background: var(--primary-teal);
+      color: var(--white);
+      font-size: 0.8rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    .blog-date {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .blog-preview-title {
+      color: var(--text-dark);
+      font-weight: 600;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    .blog-preview-excerpt {
+      color: var(--text-light);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .blog-read-more {
+      color: var(--primary-teal);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      align-self: flex-start;
+    }
+
+    .blog-read-more:hover {
+      color: var(--dark-teal);
+      text-decoration: none;
+      transform: translateX(5px);
+    }
+
+    .blog-read-more i {
+      font-size: 0.9rem;
+      margin-left: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .blog-read-more:hover i {
+      transform: translateX(3px);
+    }
   </style>
 </head>
 
@@ -671,6 +752,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#benefits">Benefits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#faq">FAQ</a>
@@ -776,6 +860,7 @@
           <h2 class="section-title">About FlatConnect</h2>
           <p class="lead">FlatConnect is designed specifically for small residential societies still managing with traditional methods like paper diaries, Excel sheets, and manual record-keeping. We provide an affordable, easy-to-use digital platform that doesn't require expensive infrastructure or complex training.</p>
           <p class="text-muted">Perfect for societies with 8-200 flats that find platforms like MyGate, NoBroker Hood, or Adda too expensive or complicated. Get all essential features at a fraction of the cost, with simple setup and immediate benefits.</p>
+          <p class="text-muted"><small>💡 <strong>New:</strong> Check out our <a href="#blog" style="color: var(--primary-teal); text-decoration: none; font-weight: 600;">expert blog articles</a> for in-depth guides on apartment management, society digitalization, and choosing the right features for your community.</small></p>
         </div>
       </div>
     </div>
@@ -1005,6 +1090,92 @@
               </a>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="py-5" style="background: var(--very-light-teal);" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center mb-5">
+          <h2 class="section-title">Learn More About Apartment Management</h2>
+          <p class="text-muted">Expert insights and tips to help you make the right decisions for your society</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <!-- Featured Blog Post 1 -->
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="blog-preview-card">
+            <div class="blog-preview-header">
+              <span class="blog-category">App Features</span>
+              <span class="blog-date">Nov 20, 2025</span>
+            </div>
+            <h4 class="blog-preview-title">Why Every Small Society Needs an Apartment Management App in 2025</h4>
+            <p class="blog-preview-excerpt">Discover how apartment management apps revolutionize small societies across India. Learn why digital transformation from diary-based systems is essential...</p>
+            <a href="blog/post.html?post=apartment-management-app-small-societies" class="blog-read-more">
+              Read Article <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Featured Blog Post 2 -->
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="blog-preview-card">
+            <div class="blog-preview-header">
+              <span class="blog-category">Society Management</span>
+              <span class="blog-date">Nov 18, 2025</span>
+            </div>
+            <h4 class="blog-preview-title">Complete Guide to Society Maintenance App Features</h4>
+            <p class="blog-preview-excerpt">Explore essential features every society maintenance app should have. From expense tracking to resident communication, understand what makes...</p>
+            <a href="blog/post.html?post=society-maintenance-app-guide" class="blog-read-more">
+              Read Article <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Featured Blog Post 3 -->
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="blog-preview-card">
+            <div class="blog-preview-header">
+              <span class="blog-category">Digital Transformation</span>
+              <span class="blog-date">Nov 15, 2025</span>
+            </div>
+            <h4 class="blog-preview-title">Housing Society App India: Top Features for Indian Communities</h4>
+            <p class="blog-preview-excerpt">Learn about the most important features Indian housing societies need in their management apps. From multi-language support to local payment methods...</p>
+            <a href="blog/post.html?post=housing-society-app-india" class="blog-read-more">
+              Read Article <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Featured Blog Post 4 -->
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="blog-preview-card">
+            <div class="blog-preview-header">
+              <span class="blog-category">Finance & Payments</span>
+              <span class="blog-date">Nov 12, 2025</span>
+            </div>
+            <h4 class="blog-preview-title">Flat App Payment Reminder: Automate Your Maintenance Collection</h4>
+            <p class="blog-preview-excerpt">Discover how automated payment reminders can improve maintenance collection rates by 40%. Learn best practices for setting up effective reminder systems...</p>
+            <a href="blog/post.html?post=flat-app-payment-reminder-system" class="blog-read-more">
+              Read Article <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- View All Blog Posts CTA -->
+      <div class="row mt-4">
+        <div class="col-lg-12 text-center">
+          <a href="blog/index.html" class="btn btn-primary btn-lg">
+            <i class="fa fa-book mr-2"></i>View All Articles
+          </a>
+          <p class="mt-3 text-muted">
+            <small>Get expert tips on apartment management, society administration, and digital transformation</small>
+          </p>
         </div>
       </div>
     </div>
