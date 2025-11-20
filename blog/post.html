@@ -506,16 +506,41 @@
 
       async loadMarkdownPost() {
         try {
-          const response = await fetch(`markdown/${this.slug}.md`);
+          // Load from JSON data file instead of individual markdown files
+          const response = await fetch(`data/posts.json`);
+          
           if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+            throw new Error(`HTTP error! status: ${response.status} - ${response.statusText}`);
           }
-          const markdownText = await response.text();
-          this.parseMarkdownWithMetadata(markdownText);
+          
+          const postsData = await response.json();
+          const postData = postsData[this.slug];
+          
+          if (!postData) {
+            throw new Error(`Post not found: ${this.slug}`);
+          }
+          
+          // Set metadata from JSON
+          this.metadata = {
+            title: postData.title,
+            description: postData.description,
+            keywords: postData.keywords,
+            author: postData.author,
+            date: postData.date,
+            category: postData.category,
+            tags: postData.tags,
+            readTime: postData.readTime,
+            slug: postData.slug,
+            featured: postData.featured
+          };
+          
+          this.content = postData.content;
           this.renderPost();
         } catch (error) {
-          console.error('Error loading markdown post:', error);
-          this.showError();
+          console.error('Error loading post:', error);
+          console.error('Attempted to load post:', this.slug);
+          console.error('Current URL:', window.location.href);
+          this.showError(error.message);
         }
       }
 
@@ -704,11 +729,25 @@
         });
       }
 
-      showError() {
+      showError(errorMessage = 'Unable to load article') {
         document.getElementById('loading').style.display = 'none';
         document.getElementById('error').style.display = 'block';
         document.getElementById('article-title').textContent = 'Article Not Found';
-        document.getElementById('article-meta').innerHTML = '<i class="fa fa-exclamation-triangle"></i> Unable to load article';
+        document.getElementById('article-meta').innerHTML = `<i class="fa fa-exclamation-triangle"></i> ${errorMessage}`;
+        
+        // Add debugging info in development
+        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+          const debugInfo = document.createElement('div');
+          debugInfo.style.cssText = 'background: #f8f9fa; padding: 1rem; margin: 1rem 0; border-radius: 5px; font-family: monospace; font-size: 12px;';
+          debugInfo.innerHTML = `
+            <strong>Debug Info:</strong><br>
+            Slug: ${this.slug}<br>
+            Attempted URL: markdown/${this.slug}.md<br>
+            Full URL: ${window.location.origin + window.location.pathname.replace('post.html', '')}markdown/${this.slug}.md<br>
+            Error: ${errorMessage}
+          `;
+          document.getElementById('article-content').appendChild(debugInfo);
+        }
       }
 
       trackPageView() {

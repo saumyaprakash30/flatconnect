@@ -1,0 +1,15 @@
+# Serve markdown files with correct MIME type
+AddType text/plain .md
+
+# Enable CORS for markdown files (if needed)
+<Files "*.md">
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type"
+</Files>
+
+# Cache markdown files
+<Files "*.md">
+    ExpiresActive On
+    ExpiresDefault "access plus 1 hour"
+</Files>
