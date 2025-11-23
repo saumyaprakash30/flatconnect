@@ -1,6 +1,16 @@
 // Blog posts configuration
 const blogPosts = [
   {
+    slug: "small-societies-dont-need-expensive-apps",
+    title: "Why Small Housing Societies Don't Need Expensive Management Apps",
+    excerpt: "Discover why ₹2000-₹5000/month management apps are overkill for small societies. Learn how FlatConnect's affordable, WhatsApp-first approach gives you everything you need at a fraction of the cost.",
+    category: "Cost & Value",
+    date: "2025-11-23",
+    readTime: "7 min",
+    featured: true,
+    keywords: ["affordable society app", "cheap apartment management", "small society budget", "WhatsApp society management"]
+  },
+  {
     slug: "apartment-management-app-small-societies",
     title: "Why Every Small Society Needs an Apartment Management App in 2025",
     excerpt: "Discover how apartment management apps revolutionize small societies across India. Learn why digital transformation from diary-based systems is essential for modern communities with 8-200 flats.",
