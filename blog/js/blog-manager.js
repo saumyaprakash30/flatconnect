@@ -70,7 +70,7 @@ function createBlogPostCard(post) {
   const col = document.createElement('div');
   col.className = 'col-lg-6 mb-4';
 
-  const postUrl = `post.html?post=${post.slug}`;
+  const postUrl = `posts/${post.slug}.html`;
 
   col.innerHTML = `
     <article class="blog-post-card">
