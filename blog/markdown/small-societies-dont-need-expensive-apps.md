@@ -34,7 +34,7 @@ Premium society management platforms typically charge **₹2,000–₹5,000 per 
 
 ### What You Actually Need
 
-For a small society (8-200 flats), your core needs are much simpler:
+For a small society (8+ flats), your core needs are much simpler:
 
 - ✅ **Quick communication** with residents
 - ✅ **Maintenance bill generation** and tracking
@@ -212,7 +212,7 @@ Instead of forcing residents to adopt new apps, FlatConnect takes a **WhatsApp-f
 - **Legal requirements** for specific audit trails and compliance
 - **Budget flexibility** where cost isn't a constraint
 
-### Small Societies (8-200 Flats) Need:
+### Small Societies (8+ Flats) Need:
 
 - **Simple, affordable tools** that committee volunteers can manage
 - **WhatsApp integration** for instant resident adoption

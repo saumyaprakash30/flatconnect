@@ -13,7 +13,7 @@ const blogPosts = [
   {
     slug: "apartment-management-app-small-societies",
     title: "Why Every Small Society Needs an Apartment Management App in 2025",
-    excerpt: "Discover how apartment management apps revolutionize small societies across India. Learn why digital transformation from diary-based systems is essential for modern communities with 8-200 flats.",
+    excerpt: "Discover how apartment management apps revolutionize small societies across India. Learn why digital transformation from diary-based systems is essential for modern communities with 8+ flats.",
     category: "App Features",
     date: "2025-11-20",
     readTime: "8 min",

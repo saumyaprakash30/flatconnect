@@ -120,7 +120,7 @@ FlatConnect specifically addresses the needs of small to medium societies with a
 - Regular updates with new features
 
 ### ⚠️ Considerations
-- Primarily focused on societies with 8-200 flats
+- Primarily focused on societies with 8+ flats
 - Some advanced features still in development
 - Best suited for communities ready to go digital
 
