@@ -148,6 +148,15 @@
     }
     .btn-demo .ico { background: rgba(255, 255, 255, 0.18); }
 
+    /* Call now */
+    .btn-call {
+      background: var(--very-light-teal);
+      color: var(--primary-teal);
+      border: 1.5px solid #d8edec;
+    }
+    .btn-call .ico { background: var(--white); color: var(--primary-teal); }
+    .btn-call .label small { color: var(--text-light); }
+
     /* Secondary — downloads */
     .btn-secondary {
       background: var(--very-light-teal);
@@ -226,6 +235,16 @@
         <span class="ico">📅</span>
         <span class="label">Book a Demo
           <small>Talk to us on WhatsApp</small>
+        </span>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="btn btn-call"
+         href="tel:+919945342325"
+         onclick="gtag('event', 'qr_call_now')">
+        <span class="ico">📞</span>
+        <span class="label">Call Now
+          <small>+91 99453 42325</small>
         </span>
         <span class="arrow">›</span>
       </a>
