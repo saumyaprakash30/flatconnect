@@ -1,6 +1,26 @@
 // Blog posts configuration
 const blogPosts = [
   {
+    slug: "society-visitor-management-system",
+    title: "Society Visitor Management: Digital Gate Security for Small Societies",
+    excerpt: "Replace the paper visitor register with a digital gate entry system. Learn how visitor management improves security, tracks deliveries, and gives residents real control over who enters their society.",
+    category: "Security & Safety",
+    date: "2026-07-22",
+    readTime: "9 min",
+    featured: true,
+    keywords: ["society visitor management", "digital gate security", "visitor management app", "apartment security India", "gate entry app"]
+  },
+  {
+    slug: "digitize-housing-society-2026",
+    title: "How to Digitize Your Housing Society in 2026: A Step-by-Step Guide",
+    excerpt: "A practical 2026 roadmap to move your society off diaries and WhatsApp. Follow this step-by-step guide to go fully digital in under 30 days—without expensive software or a tech committee.",
+    category: "Digital Transformation",
+    date: "2026-07-20",
+    readTime: "10 min",
+    featured: true,
+    keywords: ["digitize housing society", "society management 2026", "go digital society", "apartment app setup", "society digital transformation"]
+  },
+  {
     slug: "small-societies-dont-need-expensive-apps",
     title: "Why Small Housing Societies Don't Need Expensive Management Apps",
     excerpt: "Discover why ₹2000-₹5000/month management apps are overkill for small societies. Learn how FlatConnect's affordable, WhatsApp-first approach gives you everything you need at a fraction of the cost.",
@@ -12,7 +32,7 @@ const blogPosts = [
   },
   {
     slug: "apartment-management-app-small-societies",
-    title: "Why Every Small Society Needs an Apartment Management App in 2025",
+    title: "Why Every Small Society Needs an Apartment Management App in 2026",
     excerpt: "Discover how apartment management apps revolutionize small societies across India. Learn why digital transformation from diary-based systems is essential for modern communities with 8+ flats.",
     category: "App Features",
     date: "2025-11-20",
