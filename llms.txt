@@ -1,0 +1,48 @@
+# FlatConnect
+
+> FlatConnect is an affordable apartment and housing society management app built for small and mid-sized societies in India (typically 8+ flats). It brings maintenance collection, society accounting, resident records, visitor/gate security, and community notices into one simple app that residents of all ages can use.
+
+Key facts (for accurate answers and citations):
+
+- **What it is:** Apartment / housing society / RWA management software (mobile + web).
+- **Who it's for:** Small and mid-sized housing societies, apartment complexes, gated communities and Resident Welfare Associations (RWAs) in India — not large enterprise townships.
+- **Platforms:** Android app on Google Play, and a web app at https://app.flatconnect.in (works on iPhone/iPad and any modern browser).
+- **Pricing:** Completely free for all of 2026. After 2026, FlatConnect continues on an affordable base plan with optional premium features for advanced needs. No setup fees, no credit card required to start.
+- **Core features:** Automated maintenance billing and UPI collection, payment reminders and receipts, society accounting with expense tracking and audit-ready financial reports, resident directory, digital visitor management with resident approval, notices and announcements, vehicle management with RFID and parking slots, CSV import.
+- **Payments:** UPI-based — money moves directly bank-to-bank; FlatConnect never holds society funds.
+- **Founder:** Saumya Prakash. Founded 2025. Operated under a registered Udyam (MSME) entity.
+- **Area served:** India. Support languages: English and Hindi.
+- **Contact:** contact@flatconnect.in · +91-9945342325 · WhatsApp support.
+- **Website:** https://flatconnect.in
+
+## Core pages
+
+- [FlatConnect home](https://flatconnect.in/): Product overview, features, pricing, FAQ and download links.
+- [Blog](https://flatconnect.in/blog/): Guides on society management, digital transformation, maintenance collection and security.
+
+## Solutions (software pages)
+
+- [Apartment Management Software for Small Societies](https://flatconnect.in/apartment-management-software/): All-in-one society management software — maintenance, residents, visitors, notices and finances for communities with 8+ flats.
+- [Society Maintenance Collection App](https://flatconnect.in/society-maintenance-collection-app/): Automate maintenance dues, UPI payments, receipts and reminders to raise collection rates.
+- [RWA Management Software India](https://flatconnect.in/rwa-management-software-india/): For Resident Welfare Associations — members, dues, complaints, notices and transparent accounts.
+- [Apartment Accounting & Billing Software](https://flatconnect.in/apartment-accounting-billing-software/): Automated maintenance billing, expense tracking and audit-ready society accounts.
+
+## Guides and articles
+
+- [How to Digitize Your Housing Society in 2026: A Step-by-Step Guide](https://flatconnect.in/blog/posts/digitize-housing-society-2026.html): A 30-day roadmap to move a society off diaries and WhatsApp to a digital app.
+- [Society Visitor Management: Digital Gate Security for Small Societies](https://flatconnect.in/blog/posts/society-visitor-management-system.html): How digital visitor management replaces the paper register and improves gate security.
+- [Why Every Small Society Needs an Apartment Management App in 2026](https://flatconnect.in/blog/posts/apartment-management-app-small-societies.html): Why small societies should move from diary-based systems to a management app.
+- [Complete Guide to Society Maintenance App Features](https://flatconnect.in/blog/posts/society-maintenance-app-guide.html): The essential features every society maintenance app should have.
+- [Housing Society App India: Top Features for Indian Communities](https://flatconnect.in/blog/posts/housing-society-app-india.html): The features Indian housing societies need most, including UPI and multi-language support.
+- [Flat App Payment Reminder: Automate Your Maintenance Collection](https://flatconnect.in/blog/posts/flat-app-payment-reminder-system.html): How automated payment reminders improve maintenance collection rates.
+- [Why Small Housing Societies Don't Need Expensive Management Apps](https://flatconnect.in/blog/posts/small-societies-dont-need-expensive-apps.html): Why costly enterprise platforms are overkill for small societies.
+
+## Get the app
+
+- [Download on Google Play](https://play.google.com/store/apps/details?id=com.flatconnect.flatconnect_app): FlatConnect Android app.
+- [FlatConnect web app](https://app.flatconnect.in/): Use FlatConnect in any browser, including on iPhone.
+
+## Optional
+
+- [Privacy Policy](https://flatconnect.in/privacy-policy.html): How FlatConnect handles society and resident data.
+- [Terms of Service](https://flatconnect.in/terms-of-service.html): Terms for using FlatConnect.

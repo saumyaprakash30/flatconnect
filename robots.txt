@@ -10,6 +10,8 @@ Disallow: /.claude/
 # Sitemap
 Sitemap: https://flatconnect.in/sitemap.xml
 
+# LLM-friendly content map (AEO): https://flatconnect.in/llms.txt
+
 # Allow all major search engines
 User-agent: Googlebot
 Allow: /
@@ -42,23 +44,56 @@ Allow: /
 User-agent: WhatsApp
 Allow: /
 
-# Allow AI/LLM crawlers
+# Allow AI/LLM crawlers (Answer Engine Optimization)
+# OpenAI (ChatGPT training, browsing, and search index)
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: Google-Extended
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic (Claude) — current and legacy crawler names
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
 Allow: /
 
 User-agent: Claude-Web
 Allow: /
 
+# Google (Gemini / AI Overviews / Vertex)
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity
 User-agent: PerplexityBot
 Allow: /
 
+# Apple Intelligence
 User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# DuckDuckGo AI
+User-agent: DuckAssistBot
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
 Allow: /
 
 # Crawl-delay for less known bots to be polite
