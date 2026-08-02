@@ -37,8 +37,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- SEO Meta Tags -->
-  <title>FlatConnect - Manage Society, Finances & Visitors | Free Apartment Management App</title>
-  <meta name="description" content="FlatConnect helps apartment societies manage finances, residents, vehicles, visitors and communication. Track dues, payment history, monthly finance reports, vehicle management with RFID, CSV import, bug reporting and more. Free to start.">
+  <title>Apartment Society Management Software - Maintenance, Finances & Visitors | FlatConnect</title>
+  <meta name="description" content="Stop managing your society on Excel, WhatsApp & paper records. FlatConnect helps apartment associations collect maintenance dues, track expenses, and manage residents, visitors & notices from one easy-to-use app. Free through 2026.">
   <meta name="keywords" content="apartment management app, society management software, maintenance dues tracker, visitor management system, resident management, society finance app, apartment visitor tracking, housing society app India, flat management, society notice app, vehicle management RFID, parking slot management, payment history, late fee tracking, CSV import dues, bug reporting, monthly finance report">
   <meta name="author" content="Saumya Prakash">
   <meta name="robots" content="index, follow">
@@ -61,8 +61,8 @@
   <meta property="al:web:should_fallback" content="true">
   
   <!-- Open Graph Meta Tags for Social Media -->
-  <meta property="og:title" content="FlatConnect - Manage Society, Finances & Visitors in One App">
-  <meta property="og:description" content="Simple, powerful apartment management. Track dues, manage vehicles with RFID, payment history, monthly finance reports, visitor notifications, CSV import and more. Free to start.">
+  <meta property="og:title" content="Stop Managing Your Society on Excel & Paper | FlatConnect">
+  <meta property="og:description" content="FlatConnect helps apartment associations collect maintenance dues, track expenses, and manage residents, visitors & notices from one easy-to-use platform. Free through 2026.">
   <meta property="og:image" content="https://flatconnect.in/public/flatConnectIcon.png">
   <meta property="og:url" content="https://flatconnect.in">
   <meta property="og:type" content="website">
@@ -70,8 +70,8 @@
   
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="FlatConnect - Society, Finances & Visitors in One App">
-  <meta name="twitter:description" content="Manage your apartment society effortlessly. Track dues, vehicles with RFID, payment history, monthly reports, visitor notifications, CSV import. Free to start.">
+  <meta name="twitter:title" content="Stop Managing Your Society on Excel & Paper | FlatConnect">
+  <meta name="twitter:description" content="Collect maintenance dues, track expenses, and manage residents, visitors & notices from one easy-to-use app. Built for apartment associations. Free through 2026.">
   <meta name="twitter:image" content="https://flatconnect.in/public/flatConnectIcon.png">
   <meta name="twitter:app:name:googleplay" content="FlatConnect">
   <meta name="twitter:app:id:googleplay" content="com.flatconnect.flatconnect_app">
@@ -327,8 +327,9 @@
     }
     
     .app-header h1 {
-      font-size: 3.5rem;
+      font-size: 2.9rem;
       font-weight: 700;
+      line-height: 1.2;
       margin-bottom: 1.5rem;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
@@ -365,6 +366,35 @@
       font-weight: 500;
       color: rgba(255,255,255,0.95);
       text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .hero-checklist {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: inline-grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.5rem 2rem;
+      text-align: left;
+    }
+    .hero-checklist li {
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.95);
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+    .hero-checklist li i {
+      color: #FFB627;
+      margin-right: 8px;
+    }
+    @media (max-width: 575.98px) {
+      .hero-checklist {
+        grid-template-columns: 1fr;
+        gap: 0.4rem;
+      }
+      .hero-checklist li {
+        font-size: 0.95rem;
+      }
     }
 
     .app-header p {
@@ -1001,18 +1031,26 @@
   <header class="app-header" id="home">
     <div class="container text-center">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-10 mx-auto">
           <div class="app-logo">
             <img src="public/flatConnectIcon.png" alt="FlatConnect - Smart Apartment Management Platform Logo">
           </div>
-          <h1 class="display-4 font-weight-bold mb-2">Manage Your Society, Finances & Visitors — All in One App</h1>
+          <h1 class="display-4 font-weight-bold mb-2">Stop Managing Your Society on Excel, WhatsApp &amp; Paper Records</h1>
           <p class="animated-tagline mb-4">
             <span class="tagline-static">Digitalize your Society — </span><span class="tagline-typed" id="typedText"></span><span class="tagline-cursor">|</span>
           </p>
-          <p class="lead mb-4">Simple, powerful and built for modern apartments. Track dues, manage residents, and handle visitors effortlessly.</p>
+          <p class="lead mb-4">FlatConnect helps apartment associations collect maintenance dues, track expenses, manage residents, visitors, and notices from one easy-to-use platform.</p>
+          <ul class="hero-checklist mb-4">
+            <li><i class="fa fa-check-circle"></i> Maintenance &amp; Dues Management</li>
+            <li><i class="fa fa-check-circle"></i> Expense Tracking &amp; Financial Reports</li>
+            <li><i class="fa fa-check-circle"></i> Resident &amp; Flat Management</li>
+            <li><i class="fa fa-check-circle"></i> Notices &amp; Notifications</li>
+            <li><i class="fa fa-check-circle"></i> Visitor &amp; Vehicle Management</li>
+            <li><i class="fa fa-check-circle"></i> Online Payment Collection</li>
+          </ul>
           <div class="pilot-badge mb-4">
             <span style="background: linear-gradient(135deg, #FFB627 0%, #FFA500 100%); color: white; padding: 8px 16px; border-radius: 20px; font-weight: 700; display: inline-block; font-size: 1.1rem;">
-              🎉 Pilot Launch Offer – All Features FREE for 2026
+              🎉 Pilot Launch Offer — All Features FREE Through 2026
             </span>
           </div>
           
@@ -1136,6 +1174,39 @@
               </div>
             </div>
           </div>
+
+          <p class="lead mt-5 mb-4" style="color: var(--text-dark); font-weight: 600;">More than digital maintenance — peace of mind for your society</p>
+          <div class="row">
+            <div class="col-lg-6 mb-4">
+              <div class="mission-card p-4 bg-white text-dark rounded shadow h-100 text-left">
+                <i class="fa fa-database mb-2" style="font-size: 2em; color: var(--primary-teal);"></i>
+                <h5 style="color: var(--text-dark);">Never lose society financial records</h5>
+                <p class="text-muted mb-0">Every collection and expense is stored safely in the cloud — no more lost registers, corrupted Excel files or data that disappears with a broken laptop.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <div class="mission-card p-4 bg-white text-dark rounded shadow h-100 text-left">
+                <i class="fa fa-handshake-o mb-2" style="font-size: 2em; color: var(--light-teal);"></i>
+                <h5 style="color: var(--text-dark);">Reduce payment disputes with residents</h5>
+                <p class="text-muted mb-0">Residents see their exact dues, payment history and receipts in the app — transparent numbers mean fewer arguments over "I already paid".</p>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <div class="mission-card p-4 bg-white text-dark rounded shadow h-100 text-left">
+                <i class="fa fa-refresh mb-2" style="font-size: 2em; color: var(--primary-teal);"></i>
+                <h5 style="color: var(--text-dark);">Runs smoothly even when the committee changes</h5>
+                <p class="text-muted mb-0">Handovers take minutes, not months. New committee members inherit complete history and accounts — society operations never skip a beat.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <div class="mission-card p-4 bg-white text-dark rounded shadow h-100 text-left">
+                <i class="fa fa-list-alt mb-2" style="font-size: 2em; color: var(--light-teal);"></i>
+                <h5 style="color: var(--text-dark);">Complete audit trail of collections & expenses</h5>
+                <p class="text-muted mb-0">Every rupee in and out is time-stamped and traceable — ready for AGM reviews, audits and full financial accountability.</p>
+              </div>
+            </div>
+          </div>
+
           <p class="text-muted mt-4"><small>💡 <strong>New:</strong> Check out our <a href="#blog" style="color: var(--primary-teal); text-decoration: none; font-weight: 600;">expert blog articles</a> for in-depth guides on apartment management, society digitalization, and choosing the right features for your community.</small></p>
         </div>
       </div>
@@ -1883,7 +1954,11 @@
         "From Excel Sheets to Auto Billing",
         "From WhatsApp Chaos to Clear Notices",
         "From Manual Collection to UPI Payments",
-        "From Guesswork to Financial Transparency"
+        "From Guesswork to Financial Transparency",
+        "From Lost Registers to Safe Financial Records",
+        "From Payment Disputes to Clear, Trusted Numbers",
+        "From Messy Handovers to Smooth Committee Changes",
+        "From No Records to a Complete Audit Trail"
       ];
       var el = document.getElementById('typedText');
       var phraseIndex = 0;
