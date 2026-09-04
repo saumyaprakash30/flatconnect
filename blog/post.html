@@ -75,12 +75,21 @@
     href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
     rel='stylesheet' type='text/css'>
 
-  <!-- Marked.js for Markdown parsing -->
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  
+  <!-- Marked.js for Markdown parsing (version-pinned + SRI) -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"
+    integrity="sha384-/TQbtLCAerC3jgaim+N78RZSDYV7ryeoBCVqTuzRrFec2akfBkHS7ACQ3PQhvMVi"
+    crossorigin="anonymous"></script>
+
+  <!-- DOMPurify to sanitize rendered HTML (version-pinned + SRI) -->
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"
+    integrity="sha384-+VfUPEb0PdtChMwmBcBmykRMDd+v6D/oFmB3rZM/puCMDYcIvF968OimRh4KQY9a"
+    crossorigin="anonymous"></script>
+
   <!-- Highlight.js for syntax highlighting -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+    integrity="sha384-F/bZzf7p3Joyp5psL90p/p89AZJsndkSoGwRpXcZhleCWhd8SnRuoYo4d0yirjJp"
+    crossorigin="anonymous"></script>
 
   <!-- Custom favicon -->
   <link rel="shortcut icon" href="../../public/flatConnectIcon.png" type="image/x-icon">
@@ -446,13 +455,13 @@
                 <h3>Ready to Transform Your Society Management?</h3>
                 <p>Join thousands of satisfied communities across India who have already made the switch to digital management.</p>
                 <div class="mt-4">
-                  <a href="https://play.google.com/store/apps/details?id=com.flatconnect.flatconnect_app" target="_blank" class="btn-cta">
+                  <a href="https://play.google.com/store/apps/details?id=com.flatconnect.flatconnect_app" target="_blank" rel="noopener noreferrer" class="btn-cta">
                     <i class="fa fa-android mr-2"></i>Download FlatConnect App
                   </a>
                   <a href="../../index.html#contact" class="btn-cta">
                     <i class="fa fa-phone mr-2"></i>Get Live Demo
                   </a>
-                  <a href="https://app.flatconnect.in/" target="_blank" class="btn-cta">
+                  <a href="https://app.flatconnect.in/" target="_blank" rel="noopener noreferrer" class="btn-cta">
                     <i class="fa fa-globe mr-2"></i>Try Web Version
                   </a>
                 </div>
@@ -478,10 +487,10 @@
   </footer>
 
   <!-- jQuery and Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
 
   <script>
@@ -612,10 +621,10 @@
         // Update header
         document.getElementById('article-title').textContent = this.metadata.title;
         document.getElementById('article-meta').innerHTML = `
-          <i class="fa fa-calendar"></i> ${this.formatDate(this.metadata.date)} &nbsp;&nbsp;
-          <i class="fa fa-user"></i> By ${this.metadata.author} &nbsp;&nbsp;
-          <i class="fa fa-tag"></i> ${this.metadata.category} &nbsp;&nbsp;
-          <i class="fa fa-clock-o"></i> ${this.metadata.readTime} read
+          <i class="fa fa-calendar"></i> ${this.escapeHtml(this.formatDate(this.metadata.date))} &nbsp;&nbsp;
+          <i class="fa fa-user"></i> By ${this.escapeHtml(this.metadata.author)} &nbsp;&nbsp;
+          <i class="fa fa-tag"></i> ${this.escapeHtml(this.metadata.category)} &nbsp;&nbsp;
+          <i class="fa fa-clock-o"></i> ${this.escapeHtml(this.metadata.readTime)} read
         `;
 
         // Configure marked options
@@ -630,8 +639,8 @@
           gfm: true
         });
 
-        // Render markdown content
-        const htmlContent = marked.parse(this.content);
+        // Render markdown content (sanitized to prevent XSS)
+        const htmlContent = DOMPurify.sanitize(marked.parse(this.content));
         document.getElementById('markdown-content').innerHTML = htmlContent;
 
         // Generate table of contents
@@ -733,21 +742,32 @@
         document.getElementById('loading').style.display = 'none';
         document.getElementById('error').style.display = 'block';
         document.getElementById('article-title').textContent = 'Article Not Found';
-        document.getElementById('article-meta').innerHTML = `<i class="fa fa-exclamation-triangle"></i> ${errorMessage}`;
-        
+        // Use textContent (not innerHTML) so any attacker-controlled slug in the
+        // error message is treated as text and cannot execute as HTML/script.
+        const meta = document.getElementById('article-meta');
+        meta.innerHTML = '<i class="fa fa-exclamation-triangle"></i> ';
+        meta.appendChild(document.createTextNode(errorMessage));
+
         // Add debugging info in development
         if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
           const debugInfo = document.createElement('div');
           debugInfo.style.cssText = 'background: #f8f9fa; padding: 1rem; margin: 1rem 0; border-radius: 5px; font-family: monospace; font-size: 12px;';
+          const attemptedUrl = `${window.location.origin + window.location.pathname.replace('post.html', '')}markdown/${this.slug}.md`;
           debugInfo.innerHTML = `
             <strong>Debug Info:</strong><br>
-            Slug: ${this.slug}<br>
-            Attempted URL: markdown/${this.slug}.md<br>
-            Full URL: ${window.location.origin + window.location.pathname.replace('post.html', '')}markdown/${this.slug}.md<br>
-            Error: ${errorMessage}
+            Slug: ${this.escapeHtml(this.slug)}<br>
+            Attempted URL: markdown/${this.escapeHtml(this.slug)}.md<br>
+            Full URL: ${this.escapeHtml(attemptedUrl)}<br>
+            Error: ${this.escapeHtml(errorMessage)}
           `;
           document.getElementById('article-content').appendChild(debugInfo);
         }
+      }
+
+      escapeHtml(value) {
+        const div = document.createElement('div');
+        div.textContent = value == null ? '' : String(value);
+        return div.innerHTML;
       }
 
       trackPageView() {
