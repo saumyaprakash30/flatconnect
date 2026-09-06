@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny-ps" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>FlatConnect</title>
+  <rect x="0" y="0" width="1024" height="1024" fill="#32989C"/>
+  <path d="M512 282 L720 436 L720 707 L303 707 L303 436 Z" fill="#FEFEFE"/>
+  <path d="M465 546 L558 546 L558 707 L465 707 Z" fill="#32989C"/>
+  <circle cx="512" cy="546" r="95" fill="#32989C"/>
+</svg>
