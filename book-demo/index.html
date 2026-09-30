@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CE10NW4DF3"></script>
@@ -9,39 +10,219 @@
     gtag('js', new Date());
     gtag('config', 'G-CE10NW4DF3');
   </script>
+
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FlatConnect - Redirecting to demo booking...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#008080">
   <meta name="robots" content="noindex, follow">
-  <meta http-equiv="refresh" content="0;url=https://calendar.app.google/mmqhhmRJLoDbB9bJ7">
+
+  <title>FlatConnect — Book a Demo</title>
+  <meta name="description" content="Book a FlatConnect demo — pick a slot on our calendar or chat with us on WhatsApp.">
+
+  <link rel="icon" href="../public/flatConnectIcon.png">
+  <link rel="canonical" href="https://flatconnect.in/book-demo/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FlatConnect — Book a Demo">
+  <meta property="og:description" content="Pick a slot on our calendar or chat with us on WhatsApp.">
+  <meta property="og:image" content="https://flatconnect.in/public/flatConnectIcon.png">
+  <meta property="og:url" content="https://flatconnect.in/book-demo/">
+  <meta property="og:type" content="website">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
   <style>
+    :root {
+      --primary-teal: #008080;
+      --light-teal: #20b2aa;
+      --dark-teal: #006666;
+      --very-light-teal: #f0f9f8;
+      --text-dark: #2c3e50;
+      --text-light: #546e7a;
+      --white: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(160deg, var(--primary-teal) 0%, var(--dark-teal) 100%);
+      color: var(--text-dark);
       min-height: 100vh;
-      margin: 0;
-      background: #f5f5f5;
-      color: #333;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px 20px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Branding header */
+    .brand {
       text-align: center;
+      color: var(--white);
+      margin-bottom: 32px;
     }
-    .container {
-      padding: 2rem;
+
+    .brand .logo {
+      width: 96px;
+      height: 96px;
+      border-radius: 24px;
+      background: var(--white);
+      padding: 6px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+      object-fit: contain;
+      margin-bottom: 18px;
     }
-    a {
-      color: #1a73e8;
-      text-decoration: underline;
+
+    .brand h1 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
     }
+
+    .brand p {
+      margin-top: 8px;
+      font-size: 1rem;
+      font-weight: 400;
+      opacity: 0.92;
+      line-height: 1.5;
+    }
+
+    /* Action buttons */
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      background: var(--white);
+      padding: 22px;
+      border-radius: 22px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      width: 100%;
+      padding: 16px 18px;
+      border-radius: 14px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+      cursor: pointer;
+    }
+
+    .btn:active { transform: scale(0.98); }
+
+    .btn .ico {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 11px;
+      font-size: 1.3rem;
+    }
+
+    .btn .label { display: flex; flex-direction: column; line-height: 1.25; }
+    .btn .label small { font-weight: 400; font-size: 0.78rem; opacity: 0.85; }
+
+    .btn .arrow { margin-left: auto; opacity: 0.6; font-size: 1.1rem; }
+
+    /* Primary — pick a slot on the calendar */
+    .btn-demo {
+      background: var(--primary-teal);
+      color: var(--white);
+      box-shadow: 0 8px 20px rgba(0, 128, 128, 0.32);
+    }
+    .btn-demo .ico { background: rgba(255, 255, 255, 0.18); }
+
+    /* Secondary — WhatsApp */
+    .btn-secondary {
+      background: var(--very-light-teal);
+      color: var(--primary-teal);
+      border: 1.5px solid #d8edec;
+    }
+    .btn-secondary .ico { background: var(--white); color: var(--primary-teal); }
+    .btn-secondary .label small { color: var(--text-light); }
+
+    .hint {
+      margin-top: 4px;
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.82rem;
+      line-height: 1.7;
+    }
+    footer a { color: var(--white); text-decoration: none; font-weight: 600; }
+    footer a:hover { text-decoration: underline; }
+    footer .copyright { margin-top: 8px; opacity: 0.75; font-weight: 400; }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <p>Redirecting to the demo booking page...</p>
-    <p><a href="https://calendar.app.google/mmqhhmRJLoDbB9bJ7">Click here if not redirected</a></p>
+  <div class="card">
+    <!-- Branding -->
+    <header class="brand">
+      <img class="logo" src="../public/flatConnectIcon.png" alt="FlatConnect logo">
+      <h1>Book a Demo</h1>
+      <p>See how FlatConnect handles your society’s finances, visitors &amp; complaints — in about 20 minutes.</p>
+    </header>
+
+    <!-- Action buttons -->
+    <main class="actions">
+      <a class="btn btn-demo"
+         href="https://calendar.app.google/mmqhhmRJLoDbB9bJ7"
+         target="_blank" rel="noopener"
+         onclick="gtag('event', 'book_demo_calendar')">
+        <span class="ico">📅</span>
+        <span class="label">Pick a Time
+          <small>Choose a slot on our calendar</small>
+        </span>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="btn btn-secondary"
+         href="https://wa.me/message/QOY6LM55JEPZF1"
+         target="_blank" rel="noopener"
+         onclick="gtag('event', 'book_demo_whatsapp')">
+        <span class="ico">💬</span>
+        <span class="label">Chat on WhatsApp
+          <small>Prefer to message first? Ask us anything</small>
+        </span>
+        <span class="arrow">›</span>
+      </a>
+
+      <p class="hint">No commitment — we’ll walk you through the app and answer questions.</p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <a href="../terms-of-service.html">Terms &amp; Conditions</a>
+      &nbsp;·&nbsp;
+      <a href="../privacy-policy.html">Privacy Policy</a>
+      <div class="copyright">© 2026 FlatConnect · flatconnect.in</div>
+    </footer>
   </div>
-  <script>
-    window.location.href = "https://calendar.app.google/mmqhhmRJLoDbB9bJ7";
-  </script>
 </body>
+
 </html>
