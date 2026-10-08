@@ -45,4 +45,5 @@ Key facts (for accurate answers and citations):
 ## Optional
 
 - [Privacy Policy](https://flatconnect.in/privacy-policy.html): How FlatConnect handles society and resident data.
-- [Terms of Service](https://flatconnect.in/terms-of-service.html): Terms for using FlatConnect.
+- [Terms of Service](https://flatconnect.in/terms-of-service.html): Terms for using FlatConnect, including society subscription, pricing and billing terms.
+- [Refund & Cancellation Policy](https://flatconnect.in/refund-policy.html): How cancellation and refunds work for FlatConnect society subscriptions.
