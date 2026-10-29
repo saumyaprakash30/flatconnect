@@ -18,193 +18,60 @@
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://flatconnect.in/refund-policy.html">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            padding: 40px;
-        }
-
-        h1 {
-            color: #2c3e50;
-            border-bottom: 3px solid #008080;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            font-size: 2.5em;
-        }
-
-        h2 {
-            color: #2c3e50;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 1.5em;
-            border-left: 4px solid #008080;
-            padding-left: 15px;
-        }
-
-        h3 {
-            color: #34495e;
-            margin-top: 25px;
-            margin-bottom: 10px;
-            font-size: 1.2em;
-        }
-
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-
-        ul, ol {
-            margin-bottom: 20px;
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        strong {
-            color: #2c3e50;
-        }
-
-        .updated-date {
-            background: #ecf0f1;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 25px;
-            font-style: italic;
-            text-align: center;
-        }
-
-        .highlight {
-            background: #f0f9f8;
-            border-left: 4px solid #008080;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 0 5px 5px 0;
-        }
-
-        .warning {
-            background: #fef9e7;
-            border-left: 4px solid #f39c12;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 0 5px 5px 0;
-        }
-
-        .contact-section {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 5px;
-            margin-top: 20px;
-            border: 1px solid #dee2e6;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #ecf0f1;
-            color: #7f8c8d;
-        }
-
-        .logo {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .logo a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .logo a:hover {
-            text-decoration: none;
-        }
-
-        .logo h1 {
-            color: #008080;
-            border: none;
-            margin: 0;
-            transition: color 0.3s ease;
-        }
-
-        .logo a:hover h1 {
-            color: #20b2aa;
-        }
-
-        .logo p {
-            color: #7f8c8d;
-            font-style: italic;
-            margin: 5px 0 0 0;
-        }
-
-        .table-wrap {
-            overflow-x: auto;
-            margin-bottom: 20px;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            font-size: 0.95em;
-        }
-
-        th, td {
-            border: 1px solid #dee2e6;
-            padding: 10px;
-            text-align: left;
-            vertical-align: top;
-        }
-
-        th {
-            background: #f0f9f8;
-            color: #2c3e50;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-                margin: 10px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-        }
-    </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/site.css">
+  <link rel="shortcut icon" href="public/flatConnectIcon.png" type="image/x-icon">
+  <link rel="icon" href="public/flatConnectIcon.png" type="image/png">
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <a href="index.html" style="text-decoration: none;">
-                <h1>FlatConnect</h1>
-                <p>Building Better Communities</p>
-            </a>
-        </div>
+  <a class="sr-only" href="#main">Skip to content</a>
 
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="FlatConnect home">
+        <img src="public/flatConnectIcon.png" alt="" width="40" height="40">
+        <span>FlatConnect<sup class="tm">&trade;</sup></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="navPanel" aria-expanded="false" aria-label="Open menu"><span></span></button>
+      <div class="nav-panel" id="navPanel">
+        <ul class="nav-links">
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li>
+            <details class="nav-solutions">
+              <summary>Solutions</summary>
+              <div class="menu">
+                <a href="apartment-management-software/">Apartment management software</a>
+                <a href="society-maintenance-collection-app/">Maintenance collection app</a>
+                <a href="rwa-management-software-india/">RWA management software</a>
+                <a href="apartment-accounting-billing-software/">Accounting and billing software</a>
+              </div>
+            </details>
+          </li>
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a class="btn btn-secondary" href="book-demo/">Book a demo</a>
+          <a class="btn btn-primary" href="index.html#download">Get started free</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="article-head">
+      <div class="wrap">
         <h1>Refund &amp; Cancellation Policy</h1>
+        <p class="updated">Last updated: October 8, 2026 | Version 1.0</p>
+      </div>
+    </header>
 
-        <div class="updated-date">
-            <strong>Last updated: October 8, 2026 | Version 1.0</strong>
-        </div>
+    <div class="wrap">
+      <div class="legal">
+
 
         <p>This Refund &amp; Cancellation Policy explains how cancellation and refunds work for <strong>FlatConnect subscriptions</strong>. It forms part of our <a href="terms-of-service.html">Terms of Service</a> and uses the same defined terms. FlatConnect is operated by Saumya Prakash, sole proprietor, trading as FlatConnect.</p>
 
@@ -419,14 +286,43 @@
                 <li><strong>Website</strong>: <a href="https://flatconnect.in">flatconnect.in</a></li>
             </ul>
             <p>Related documents: <a href="terms-of-service.html">Terms of Service</a> &middot; <a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="delete-account.html">Delete your account</a></p>
-        </div>
-
-        <div class="footer">
-            <hr>
-            <p><strong>FlatConnect Team</strong></p>
-            <p><em>Building Better Communities</em></p>
-            <p>© 2026 FlatConnect. All rights reserved.</p>
-        </div>
+      </div>
     </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-brand"><img src="public/flatConnectIcon.png" alt="" width="36" height="36">FlatConnect<sup class="tm">&trade;</sup></div>
+          <p style="margin-top: 14px;">Society management for apartments and RWAs in India.</p>
+          <p style="margin-top: 14px;"><a href="mailto:contact@flatconnect.in">contact@flatconnect.in</a><br><a href="https://wa.me/message/QOY6LM55JEPZF1" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+        </div>
+        <div>
+          <h2>Solutions</h2>
+          <ul>
+            <li><a href="apartment-management-software/">Apartment management software</a></li>
+            <li><a href="society-maintenance-collection-app/">Maintenance collection app</a></li>
+            <li><a href="rwa-management-software-india/">RWA management software</a></li>
+            <li><a href="apartment-accounting-billing-software/">Accounting and billing software</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Company</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog/index.html">Blog</a></li>
+            <li><a href="privacy-policy.html">Privacy policy</a></li>
+            <li><a href="terms-of-service.html">Terms of service</a></li>
+            <li><a href="refund-policy.html">Refund and cancellation</a></li>
+            <li><a href="delete-account.html">Delete account</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="foot-legal">&copy; 2026 FlatConnect&trade; by Saumya Prakash. All rights reserved. Operated under a registered Udyam (MSME) entity.</p>
+    </div>
+  </footer>
+
+  <script src="public/js/site.js"></script>
 </body>
 </html>

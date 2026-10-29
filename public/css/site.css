@@ -340,3 +340,32 @@ p { margin: 0; }
 .post-list a { color: var(--ink); text-decoration: none; font-weight: 700; font-size: 1.35rem; line-height: 1.25; letter-spacing: -0.01em; }
 .post-list a:hover { color: var(--teal); text-decoration: underline; }
 .post-list p { margin-top: 10px; color: var(--ink-soft); }
+
+/* ---------- policy pages ---------- */
+.legal { max-width: 78ch; padding: 48px 0 88px; font-size: 1.02rem; line-height: 1.75; }
+.legal h2 { font-size: 1.5rem; margin: 48px 0 14px; scroll-margin-top: calc(var(--header-h) + 16px); }
+.legal h3 { font-size: 1.18rem; margin: 30px 0 10px; scroll-margin-top: calc(var(--header-h) + 16px); }
+.legal h4 { font-size: 1.05rem; margin: 22px 0 8px; }
+.legal p { margin: 0 0 16px; }
+.legal ul, .legal ol { margin: 0 0 18px; padding-left: 1.4em; }
+.legal li { margin: 5px 0; }
+.legal li::marker { color: var(--teal); }
+.legal strong { font-weight: 650; }
+.legal hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0; }
+.legal .toc { margin: 32px 0 8px; padding: 24px 28px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--mist); }
+.legal .toc h3 { margin-top: 0; }
+.legal .toc ol { margin-bottom: 0; columns: 2; column-gap: 32px; }
+.legal .toc li { break-inside: avoid; }
+@media (max-width: 700px) { .legal .toc ol { columns: 1; } }
+.legal .highlight, .legal .warning, .legal .contact-section { margin: 28px 0; padding: 20px 24px; border-radius: var(--radius); }
+.legal .highlight { background: var(--mint); border-left: 4px solid var(--teal); }
+.legal .warning { background: #fdf3e2; border-left: 4px solid var(--marigold); }
+.legal .contact-section { border: 1px solid var(--line); }
+.legal .highlight > :first-child, .legal .warning > :first-child, .legal .contact-section > :first-child { margin-top: 0; }
+.legal .highlight > :last-child, .legal .warning > :last-child, .legal .contact-section > :last-child { margin-bottom: 0; }
+.legal .table-wrap { overflow-x: auto; margin: 20px 0; border: 1px solid var(--line); border-radius: var(--radius); }
+.legal table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.legal th, .legal td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.legal tr:last-child td { border-bottom: 0; }
+.legal th { background: var(--mint); }
+.updated { margin-top: 14px; color: var(--ink-soft); font-size: 0.98rem; }
