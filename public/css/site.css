@@ -369,3 +369,4 @@ p { margin: 0; }
 .legal tr:last-child td { border-bottom: 0; }
 .legal th { background: var(--mint); }
 .updated { margin-top: 14px; color: var(--ink-soft); font-size: 0.98rem; }
+.legal > :first-child { margin-top: 0; }

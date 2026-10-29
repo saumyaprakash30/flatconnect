@@ -29,192 +29,41 @@
   <meta property="og:url" content="https://flatconnect.in/getstarted/">
   <meta property="og:type" content="website">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../public/css/site.css">
   <style>
-    :root {
-      --primary-teal: #008080;
-      --light-teal: #20b2aa;
-      --dark-teal: #006666;
-      --very-light-teal: #f0f9f8;
-      --text-dark: #2c3e50;
-      --text-light: #546e7a;
-      --white: #ffffff;
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background: linear-gradient(160deg, var(--primary-teal) 0%, var(--dark-teal) 100%);
-      color: var(--text-dark);
-      min-height: 100vh;
-      min-height: 100dvh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 32px 20px;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .card {
-      width: 100%;
-      max-width: 420px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* Branding header */
-    .brand {
-      text-align: center;
-      color: var(--white);
-      margin-bottom: 32px;
-    }
-
-    .brand .logo {
-      width: 96px;
-      height: 96px;
-      border-radius: 24px;
-      background: var(--white);
-      padding: 6px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
-      object-fit: contain;
-      margin-bottom: 18px;
-    }
-
-    .brand h1 {
-      font-size: 1.9rem;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-    }
-
-    .brand p {
-      margin-top: 8px;
-      font-size: 1rem;
-      font-weight: 400;
-      opacity: 0.92;
-      line-height: 1.5;
-    }
-
-    /* Action buttons */
-    .actions {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      background: var(--white);
-      padding: 22px;
-      border-radius: 22px;
-      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
-    }
-
-    .btn {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      width: 100%;
-      padding: 16px 18px;
-      border-radius: 14px;
-      font-size: 1.05rem;
-      font-weight: 700;
-      text-decoration: none;
-      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-      cursor: pointer;
-    }
-
-    .btn:active { transform: scale(0.98); }
-
-    .btn .ico {
-      width: 40px;
-      height: 40px;
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 11px;
-      font-size: 1.3rem;
-    }
-
-    .btn .label { display: flex; flex-direction: column; line-height: 1.25; }
-    .btn .label small { font-weight: 400; font-size: 0.78rem; opacity: 0.85; }
-
-    .btn .arrow { margin-left: auto; opacity: 0.6; font-size: 1.1rem; }
-
-    /* Primary — Book a demo */
-    .btn-demo {
-      background: var(--primary-teal);
-      color: var(--white);
-      box-shadow: 0 8px 20px rgba(0, 128, 128, 0.32);
-    }
-    .btn-demo .ico { background: rgba(255, 255, 255, 0.18); }
-
-    /* Call now */
-    .btn-call {
-      background: var(--very-light-teal);
-      color: var(--primary-teal);
-      border: 1.5px solid #d8edec;
-    }
-    .btn-call .ico { background: var(--white); color: var(--primary-teal); }
-    .btn-call .label small { color: var(--text-light); }
-
-    /* Secondary — downloads */
-    .btn-secondary {
-      background: var(--very-light-teal);
-      color: var(--primary-teal);
-      border: 1.5px solid #d8edec;
-    }
-    .btn-secondary .ico { background: var(--white); color: var(--primary-teal); }
-    .btn-secondary .label small { color: var(--text-light); }
-
-    /* Store badges — matching custom pills (Google Play + iOS/Web) */
-    .store-badge {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      width: 100%;
-      height: 56px;
-      padding: 0 18px;
-      background: #000;
-      border-radius: 12px;
-      text-decoration: none;
-      color: var(--white);
-      transition: transform 0.15s ease;
-    }
-    .store-badge:active { transform: scale(0.98); }
-    .store-badge .badge-glyph {
-      width: 26px;
-      height: 26px;
-      flex-shrink: 0;
-    }
-    .store-badge .badge-text {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.1;
-      min-width: 104px;
-    }
-    .store-badge .badge-text small {
-      font-size: 0.62rem;
-      font-weight: 400;
-      letter-spacing: 0.5px;
-    }
-    .store-badge .badge-text strong {
-      font-size: 1.25rem;
-      font-weight: 600;
-      letter-spacing: -0.2px;
-    }
-
-    /* Footer */
-    footer {
-      margin-top: 28px;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.9);
-      font-size: 0.82rem;
-      line-height: 1.7;
-    }
-    footer a { color: var(--white); text-decoration: none; font-weight: 600; }
-    footer a:hover { text-decoration: underline; }
-    footer .copyright { margin-top: 8px; opacity: 0.75; font-weight: 400; }
+    body { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 32px 16px; background: linear-gradient(180deg, var(--white) 0%, var(--mint) 100%); }
+    .card { width: 100%; max-width: 440px; }
+    .card .brand { display: block; text-align: center; margin-bottom: 28px; font-size: 1rem; font-weight: 400; }
+    .brand .logo { width: 64px; height: 64px; margin: 0 auto 16px; }
+    .brand h1 { font-size: 2.1rem; }
+    .brand p { margin-top: 10px; color: var(--ink-soft); font-size: 1.08rem; }
+    .actions { display: flex; flex-direction: column; gap: 12px; }
+    .actions .btn { justify-content: flex-start; gap: 14px; min-height: 72px; padding: 12px 20px; border-radius: 16px; text-align: left; }
+    .actions .btn .ico { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; flex: none; }
+    .actions .btn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .actions .btn .label { flex: 1; display: flex; flex-direction: column; font-weight: 700; font-size: 1.08rem; line-height: 1.3; }
+    .actions .btn small { font-weight: 400; font-size: 0.9rem; opacity: 0.85; }
+    .actions .btn .arrow { font-family: system-ui, sans-serif; font-size: 1.6rem; line-height: 1; opacity: 0.7; }
+    .btn-demo { background: var(--teal); color: var(--white); }
+    .btn-demo:hover { background: var(--teal-dark); border-color: var(--teal-dark); color: var(--white); }
+    .btn-demo .ico { background: rgba(255, 255, 255, 0.16); }
+    .actions .btn-secondary .ico, .btn-call .ico { background: var(--mint); color: var(--teal); }
+    .btn-call { background: var(--white); color: var(--ink); border-color: var(--line); }
+    .btn-call:hover { background: var(--mist); color: var(--ink); }
+    .store-badge { display: flex; align-items: center; gap: 14px; padding: 12px 20px; border-radius: 16px; background: var(--ink); color: var(--white); text-decoration: none; }
+    .store-badge:hover { background: #0e2329; color: var(--white); }
+    .badge-glyph { width: 26px; height: 26px; flex: none; }
+    .badge-text { display: flex; flex-direction: column; line-height: 1.2; }
+    .badge-text small { font-size: 0.78rem; opacity: 0.8; }
+    .badge-text strong { font-size: 1.15rem; }
+    .hint { margin-top: 6px; text-align: center; color: var(--ink-soft); font-size: 0.95rem; }
+    footer { margin-top: 32px; text-align: center; font-size: 0.9rem; color: var(--ink-soft); }
+    footer a { color: var(--ink-soft); }
+    .copyright { margin-top: 8px; }
   </style>
 </head>
 
@@ -233,7 +82,7 @@
          href="https://calendar.app.google/mmqhhmRJLoDbB9bJ7"
          target="_blank" rel="noopener"
          onclick="gtag('event', 'qr_book_demo')">
-        <span class="ico">📅</span>
+        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
         <span class="label">Book a Demo
           <small>Pick a time on our calendar</small>
         </span>
@@ -243,7 +92,7 @@
       <a class="btn btn-secondary"
          href="https://wa.me/message/QOY6LM55JEPZF1"
          onclick="gtag('event', 'qr_chat_whatsapp')">
-        <span class="ico">💬</span>
+        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1112 20a8 8 0 01-4.1-1.1z"/></svg></span>
         <span class="label">Chat on WhatsApp
           <small>Talk to us on WhatsApp</small>
         </span>
@@ -253,7 +102,7 @@
       <a class="btn btn-call"
          href="tel:+919945342325"
          onclick="gtag('event', 'qr_call_now')">
-        <span class="ico">📞</span>
+        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v4a2 2 0 01-2 2A16 16 0 013 5a2 2 0 012-2"/></svg></span>
         <span class="label">Call Now
           <small>+91 99453 42325</small>
         </span>
@@ -271,7 +120,7 @@
           <path fill="#FFC800" d="M323 170l109 62c20 12 20 36 0 48l-109 62-68-86z"/>
         </svg>
         <span class="badge-text">
-          <small>GET IT ON</small>
+          <small>Get it on</small>
           <strong>Google Play</strong>
         </span>
       </a>
@@ -279,13 +128,13 @@
       <a class="store-badge"
          href="https://app.flatconnect.in/"
          onclick="gtag('event', 'qr_open_web')"
-         aria-label="Open FlatConnect web app on iOS or any browser">
+         aria-label="Open the FlatConnect web app on iPhone or any browser">
         <svg class="badge-glyph" viewBox="0 0 24 24" aria-hidden="true">
           <path fill="currentColor" d="M16.36 12.78c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.62-1.7-3.18-1.72-1.36-.14-2.65.8-3.34.8-.68 0-1.74-.78-2.86-.76-1.47.02-2.83.85-3.58 2.17-1.53 2.65-.39 6.57 1.09 8.72.72 1.05 1.58 2.23 2.71 2.19 1.09-.04 1.5-.7 2.82-.7 1.31 0 1.68.7 2.83.68 1.17-.02 1.91-1.07 2.62-2.12.83-1.22 1.17-2.4 1.19-2.46-.03-.01-2.27-.87-2.29-3.46zM14.2 6.31c.6-.73 1.01-1.74.9-2.75-.87.04-1.92.58-2.55 1.3-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.5 2.57-1.23z"/>
         </svg>
         <span class="badge-text">
-          <small>AVAILABLE ON</small>
-          <strong>iOS &amp; Web</strong>
+          <small>Open on</small>
+          <strong>iPhone &amp; web</strong>
         </span>
       </a>
     </main>
@@ -293,11 +142,11 @@
     <!-- Footer -->
     <footer>
       <a href="../terms-of-service.html">Terms &amp; Conditions</a>
-      &nbsp;·&nbsp;
+      &nbsp;|&nbsp;
       <a href="../privacy-policy.html">Privacy Policy</a>
-      &nbsp;&middot;&nbsp;
+      &nbsp;|&nbsp;
       <a href="../refund-policy.html">Refund &amp; Cancellation</a>
-      <div class="copyright">© 2026 FlatConnect · flatconnect.in</div>
+      <div class="copyright">© 2026 FlatConnect&trade;, flatconnect.in</div>
     </footer>
   </div>
 </body>

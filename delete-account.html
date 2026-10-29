@@ -11,313 +11,136 @@
   <meta name="robots" content="noindex, nofollow">
   
   <!-- Bootstrap Core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-  <!-- Custom Fonts -->
-  <script src="https://use.fontawesome.com/4dfd1d7bab.js"></script>
-  <link
-    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-    rel='stylesheet' type='text/css'>
-
-  <!-- Custom favicon -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/site.css">
   <link rel="shortcut icon" href="public/flatConnectIcon.png" type="image/x-icon">
   <link rel="icon" href="public/flatConnectIcon.png" type="image/png">
-
-  <style>
-    :root {
-      --primary-teal: #008080;
-      --light-teal: #20b2aa;
-      --dark-teal: #006666;
-      --very-light-teal: #f0f9f8;
-      --text-dark: #2c3e50;
-      --text-light: #546e7a;
-      --text-muted: #6c757d;
-      --white: #ffffff;
-      --danger: #dc3545;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: 'Open Sans', sans-serif;
-      line-height: 1.6;
-      color: var(--text-dark);
-      font-size: 16px;
-      background-color: var(--very-light-teal);
-    }
-    
-    .navbar {
-      background: var(--white) !important;
-      box-shadow: 0 2px 10px rgba(0, 128, 128, 0.1);
-      z-index: 1050;
-      padding: 1rem 0;
-    }
-    
-    .navbar-brand {
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: var(--primary-teal) !important;
-    }
-    
-    .navbar-brand img {
-      vertical-align: middle;
-    }
-    
-    .main-content {
-      padding: 0 0 4rem 0;
-      min-height: 80vh;
-    }
-    
-    .page-header {
-      background: linear-gradient(135deg, var(--danger) 0%, #c82333 100%);
-      color: var(--white);
-      padding: 6rem 0 3rem 0;
-      margin-bottom: 3rem;
-    }
-    
-    .page-header h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-    
-    .page-header p {
-      font-size: 1.2rem;
-      color: rgba(255,255,255,0.9);
-    }
-    
-    .info-section {
-      background: var(--white);
-      padding: 2rem;
-      border-radius: 10px;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 15px rgba(0, 128, 128, 0.1);
-    }
-    
-    .info-section h3 {
-      color: var(--primary-teal);
-      margin-bottom: 1rem;
-    }
-    
-    .deletion-form {
-      background: var(--white);
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 128, 128, 0.1);
-    }
-    
-    .form-control {
-      border: 2px solid var(--very-light-teal);
-      border-radius: 8px;
-      padding: 12px;
-      font-size: 16px;
-      min-height: 48px;
-    }
-    
-    .form-control:focus {
-      border-color: var(--primary-teal);
-      box-shadow: 0 0 0 0.2rem rgba(0, 128, 128, 0.25);
-    }
-    
-    select.form-control {
-      height: 48px;
-      padding: 10px 12px;
-    }
-    
-    .btn-danger {
-      background: var(--danger);
-      border: none;
-      color: var(--white);
-      padding: 12px 30px;
-      border-radius: 25px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-    
-    .btn-danger:hover {
-      background: #c82333;
-      transform: translateY(-2px);
-      color: var(--white);
-    }
-    
-    .btn-secondary {
-      background: var(--text-muted);
-      border: none;
-      color: var(--white);
-      padding: 12px 30px;
-      border-radius: 25px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      text-decoration: none;
-    }
-    
-    .btn-secondary:hover {
-      background: #5a6268;
-      transform: translateY(-2px);
-      color: var(--white);
-      text-decoration: none;
-    }
-    
-    .warning-box {
-      background: #fff3cd;
-      border: 1px solid #ffeaa7;
-      color: #856404;
-      padding: 1rem;
-      border-radius: 8px;
-      margin-bottom: 1.5rem;
-    }
-    
-    .data-list {
-      list-style: none;
-      padding: 0;
-    }
-    
-    .data-list li {
-      padding: 8px 0;
-      border-bottom: 1px solid var(--very-light-teal);
-    }
-    
-    .data-list li:last-child {
-      border-bottom: none;
-    }
-    
-    .data-list i {
-      color: var(--primary-teal);
-      margin-right: 8px;
-    }
-    
-    footer {
-      background: var(--text-dark);
-      color: var(--white);
-      padding: 2rem 0;
-      margin-top: 3rem;
-    }
-    
-    footer a {
-      color: var(--light-teal);
-      text-decoration: none;
-    }
-    
-    footer a:hover {
-      color: var(--primary-teal);
-      text-decoration: underline;
-    }
-  </style>
 </head>
-
 <body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="public/flatConnectIcon.png" alt="FlatConnect Logo" style="height: 32px; width: 32px; margin-right: 8px;">
-        <span>FlatConnect</span>
+  <a class="sr-only" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="FlatConnect home">
+        <img src="public/flatConnectIcon.png" alt="" width="40" height="40">
+        <span>FlatConnect<sup class="tm">&trade;</sup></span>
       </a>
-    </div>
-  </nav>
-
-  <!-- Page Header -->
-  <div class="page-header">
-    <div class="container text-center">
-      <h1><i class="fa fa-trash mr-3"></i>Delete FlatConnect Account</h1>
-      <p>How to request deletion of your account and personal data</p>
-    </div>
-  </div>
-
-  <!-- Main Content -->
-  <div class="main-content">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          
-          <!-- Information Section -->
-          <div class="info-section">
-            <h3><i class="fa fa-info-circle mr-2"></i>Before You Delete Your Account</h3>
-            <p><strong>Please note:</strong> once your deletion request is processed, the personal information listed below is permanently removed and cannot be recovered, even if you return to the App later.</p>
-
-            <h5 class="mt-3 mb-2">Data That Will Be Removed:</h5>
-            <ul class="data-list">
-              <li><i class="fa fa-check"></i>Your login access and account credentials</li>
-              <li><i class="fa fa-check"></i>Your email address and profile photo</li>
-              <li><i class="fa fa-check"></i>Personal documents you uploaded for your own reference</li>
-              <li><i class="fa fa-check"></i>Your preferences and notification settings</li>
-            </ul>
-
-            <h5 class="mt-3 mb-2">Data That Will Be Retained by Your Society:</h5>
-            <ul class="data-list">
-              <li><i class="fa fa-exclamation-triangle text-warning"></i>Your name and phone number, as part of your society's records &mdash; the number is also what reopens your account rather than duplicating it if you return</li>
-              <li><i class="fa fa-exclamation-triangle text-warning"></i>Your residency history for your flat or unit</li>
-              <li><i class="fa fa-exclamation-triangle text-warning"></i>Dues, payments and financial entries associated with your flat or unit</li>
-              <li><i class="fa fa-exclamation-triangle text-warning"></i>Content you created within a society, such as notices and expense entries</li>
-              <li><i class="fa fa-exclamation-triangle text-warning"></i>Documents you shared with your flat or with your society</li>
-            </ul>
-
-            <div class="warning-box mt-3">
-              <strong><i class="fa fa-info-circle mr-2"></i>Important:</strong> Your society's records belong to the society, not to your individual account. Residency history, dues and payments are kept for society management and accounting, so those records stay complete for other residents. Deleting your account does not cancel or waive any dues you may owe your society.
-            </div>
-
-            <div class="warning-box mt-2">
-              <strong><i class="fa fa-users mr-2"></i>If you manage a society:</strong> if you are the only active manager of a society, you will be asked to add another manager before your deletion request can be submitted, so the society is not left without anyone able to administer it.
-            </div>
-
-            <div class="warning-box mt-2">
-              <strong><i class="fa fa-clock-o mr-2"></i>Processing Time:</strong> Account deletion requests are typically processed within 30 days of submission. If you sign in again later using the same phone number, your account is reopened and your society records remain linked to it &mdash; the personal information removed during deletion is not restored, and any management role you held is not reinstated.
-            </div>
-          </div>
-
-          <!-- How to request deletion -->
-          <div class="deletion-form">
-            <h3 class="mb-4"><i class="fa fa-mobile mr-2"></i>How to Request Account Deletion</h3>
-
-            <p>Account deletion is requested from within the FlatConnect app, so that we can confirm the request comes from the account holder:</p>
-
-            <ul class="data-list">
-              <li><i class="fa fa-check"></i>Open the FlatConnect app and sign in</li>
-              <li><i class="fa fa-check"></i>Go to <strong>Profile</strong></li>
-              <li><i class="fa fa-check"></i>Scroll to the bottom and tap <strong>Delete Account</strong></li>
-              <li><i class="fa fa-check"></i>Read the confirmation and tap <strong>Request Deletion</strong></li>
-            </ul>
-
-            <div class="warning-box mt-3">
-              <strong><i class="fa fa-envelope mr-2"></i>No longer have the app?</strong> If you have uninstalled FlatConnect or cannot sign in, email us at
-              <a href="mailto:contact@flatconnect.in?subject=Account%20Deletion%20Request">contact@flatconnect.in</a>
-              from your registered email address, or include the name and phone number registered with your FlatConnect account so we can identify it. We will confirm your identity before processing the request.
-            </div>
-
-            <p class="mt-3">For full details of what is removed and what your society retains, see our <a href="privacy-policy.html#account-deletion">Privacy Policy</a>. Deleting your own account does not end your society&rsquo;s FlatConnect subscription &mdash; for that, see our <a href="refund-policy.html">Refund &amp; Cancellation Policy</a>.</p>
-
-            <div class="text-center mt-4">
-              <a href="index.html" class="btn btn-secondary">
-                <i class="fa fa-arrow-left mr-2"></i>Back to Home
-              </a>
-            </div>
-          </div>
+      <button class="nav-toggle" type="button" aria-controls="navPanel" aria-expanded="false" aria-label="Open menu"><span></span></button>
+      <div class="nav-panel" id="navPanel">
+        <ul class="nav-links">
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li>
+            <details class="nav-solutions">
+              <summary>Solutions</summary>
+              <div class="menu">
+                <a href="apartment-management-software/">Apartment management software</a>
+                <a href="society-maintenance-collection-app/">Maintenance collection app</a>
+                <a href="rwa-management-software-india/">RWA management software</a>
+                <a href="apartment-accounting-billing-software/">Accounting and billing software</a>
+              </div>
+            </details>
+          </li>
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a class="btn btn-secondary" href="book-demo/">Book a demo</a>
+          <a class="btn btn-primary" href="index.html#download">Get started free</a>
         </div>
       </div>
     </div>
-  </div>
+  </header>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container text-center">
-      <p>&copy; 2026 FlatConnect by Saumya Prakash. All rights reserved.</p>
-      <p class="mb-0">📧 contact@flatconnect.in | Need help? <a href="index.html#contact">Contact us</a></p>
+  <main id="main">
+    <header class="article-head">
+      <div class="wrap">
+        <h1>Delete your FlatConnect account</h1>
+        <p class="updated">How to request deletion of your account and personal data</p>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <div class="legal">
+        <h2>Before you delete your account</h2>
+        <p><strong>Please note:</strong> once your deletion request is processed, the personal information listed below is permanently removed and cannot be recovered, even if you return to the App later.</p>
+        <h3>Data that will be removed</h3>
+        <ul>
+          <li>Your login access and account credentials</li>
+          <li>Your email address and profile photo</li>
+          <li>Personal documents you uploaded for your own reference</li>
+          <li>Your preferences and notification settings</li>
+        </ul>
+        <h3>Data that will be retained by your society</h3>
+        <ul>
+          <li>Your name and phone number, as part of your society's records &mdash; the number is also what reopens your account rather than duplicating it if you return</li>
+          <li>Your residency history for your flat or unit</li>
+          <li>Dues, payments and financial entries associated with your flat or unit</li>
+          <li>Content you created within a society, such as notices and expense entries</li>
+          <li>Documents you shared with your flat or with your society</li>
+        </ul>
+        <div class="highlight">
+          <p><strong>Important:</strong> Your society's records belong to the society, not to your individual account. Residency history, dues and payments are kept for society management and accounting, so those records stay complete for other residents. Deleting your account does not cancel or waive any dues you may owe your society.</p>
+        </div>
+        <div class="warning">
+          <p><strong>If you manage a society:</strong> if you are the only active manager of a society, you will be asked to add another manager before your deletion request can be submitted, so the society is not left without anyone able to administer it.</p>
+        </div>
+        <div class="warning">
+          <p><strong>Processing Time:</strong> Account deletion requests are typically processed within 30 days of submission. If you sign in again later using the same phone number, your account is reopened and your society records remain linked to it &mdash; the personal information removed during deletion is not restored, and any management role you held is not reinstated.</p>
+        </div>
+
+        <h2>How to request account deletion</h2>
+        <p>Account deletion is requested from within the FlatConnect app, so that we can confirm the request comes from the account holder:</p>
+        <ol>
+          <li>Open the FlatConnect app and sign in</li>
+          <li>Go to <strong>Profile</strong></li>
+          <li>Scroll to the bottom and tap <strong>Delete Account</strong></li>
+          <li>Read the confirmation and tap <strong>Request Deletion</strong></li>
+        </ol>
+        <div class="contact-section">
+          <p><strong>No longer have the app?</strong> If you have uninstalled FlatConnect or cannot sign in, email us at <a href="mailto:contact@flatconnect.in?subject=Account%20Deletion%20Request">contact@flatconnect.in</a> from your registered email address, or include the name and phone number registered with your FlatConnect account so we can identify it. We will confirm your identity before processing the request.</p>
+        </div>
+        <p>For full details of what is removed and what your society retains, see our <a href="privacy-policy.html#account-deletion">Privacy Policy</a>. Deleting your own account does not end your society&rsquo;s FlatConnect subscription &mdash; for that, see our <a href="refund-policy.html">Refund &amp; Cancellation Policy</a>.</p>
+        <p><a href="index.html">Back to home</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-brand"><img src="public/flatConnectIcon.png" alt="" width="36" height="36">FlatConnect<sup class="tm">&trade;</sup></div>
+          <p style="margin-top: 14px;">Society management for apartments and RWAs in India.</p>
+          <p style="margin-top: 14px;"><a href="mailto:contact@flatconnect.in">contact@flatconnect.in</a><br><a href="https://wa.me/message/QOY6LM55JEPZF1" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+        </div>
+        <div>
+          <h2>Solutions</h2>
+          <ul>
+            <li><a href="apartment-management-software/">Apartment management software</a></li>
+            <li><a href="society-maintenance-collection-app/">Maintenance collection app</a></li>
+            <li><a href="rwa-management-software-india/">RWA management software</a></li>
+            <li><a href="apartment-accounting-billing-software/">Accounting and billing software</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Company</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog/index.html">Blog</a></li>
+            <li><a href="privacy-policy.html">Privacy policy</a></li>
+            <li><a href="terms-of-service.html">Terms of service</a></li>
+            <li><a href="refund-policy.html">Refund and cancellation</a></li>
+            <li><a href="delete-account.html">Delete account</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="foot-legal">&copy; 2026 FlatConnect&trade; by Saumya Prakash. All rights reserved. Operated under a registered Udyam (MSME) entity.</p>
     </div>
   </footer>
 
-  <!-- jQuery and Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-    crossorigin="anonymous"></script>
-
-
+  <script src="public/js/site.js"></script>
 </body>
-
 </html>
