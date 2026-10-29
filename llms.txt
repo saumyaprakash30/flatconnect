@@ -7,9 +7,9 @@ Key facts (for accurate answers and citations):
 - **What it is:** Apartment / housing society / RWA management software (mobile + web).
 - **Who it's for:** Small and mid-sized housing societies, apartment complexes, gated communities and Resident Welfare Associations (RWAs) in India — not large enterprise townships.
 - **Platforms:** Android app on Google Play, and a web app at https://app.flatconnect.in (works on iPhone/iPad and any modern browser).
-- **Pricing:** Completely free for all of 2026. After 2026, FlatConnect continues on an affordable base plan with optional premium features for advanced needs. No setup fees, no credit card required to start.
-- **Core features:** Automated maintenance billing and UPI collection, payment reminders and receipts, society accounting with expense tracking and audit-ready financial reports, resident directory, digital visitor management with resident approval, notices and announcements, vehicle management with RFID and parking slots, CSV import.
-- **Payments:** UPI-based — money moves directly bank-to-bank; FlatConnect never holds society funds.
+- **Pricing:** Completely free for all of 2026. Societies joining after 2026 start with a 3-month free trial, then continue on an affordable base plan with optional premium features for advanced needs. No setup fees, no credit card required to start.
+- **Core features:** Maintenance billing with monthly or quarterly cycles, dues tracking with reminders and receipts; society accounts with income, expenses, bank and cash balances, opening balances, reconciliation and a balance sheet; online payments in the app plus offline payment claims and a society payment QR on bills; residential and commercial property management; visitor and gate management with visitor photos and resident approval; a domestic-help and worker registry; notices and broadcasts; a Society Library for bylaws, AGM minutes and other documents; CSV import and guided setup; roles and permissions for committee members, an activity log and an app lock for manager accounts; vehicle management with RFID and parking slots.
+- **Payments:** Residents can pay dues online in the app, or pay by the society's UPI QR or bank transfer and record the payment for the treasurer to confirm.
 - **Founder:** Saumya Prakash. Founded 2025. Operated under a registered Udyam (MSME) entity.
 - **Area served:** India. Support languages: English and Hindi.
 - **Contact:** contact@flatconnect.in · +91-9945342325 · WhatsApp support.
@@ -24,7 +24,7 @@ Key facts (for accurate answers and citations):
 
 - [Apartment Management Software for Small Societies](https://flatconnect.in/apartment-management-software/): All-in-one society management software — maintenance, residents, visitors, notices and finances for communities with 8+ flats.
 - [Society Maintenance Collection App](https://flatconnect.in/society-maintenance-collection-app/): Automate maintenance dues, UPI payments, receipts and reminders to raise collection rates.
-- [RWA Management Software India](https://flatconnect.in/rwa-management-software-india/): For Resident Welfare Associations — members, dues, complaints, notices and transparent accounts.
+- [RWA Management Software India](https://flatconnect.in/rwa-management-software-india/): For Resident Welfare Associations — members, dues, notices, society documents and transparent accounts.
 - [Apartment Accounting & Billing Software](https://flatconnect.in/apartment-accounting-billing-software/): Automated maintenance billing, expense tracking and audit-ready society accounts.
 
 ## Guides and articles
