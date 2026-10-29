@@ -302,3 +302,41 @@ p { margin: 0; }
   .cmp-table td:nth-child(2)::before { content: "Today: "; font-weight: 600; }
   .cmp-table td.good::before { content: "With FlatConnect: "; font-weight: 600; color: var(--ink); }
 }
+
+/* ---------- blog ---------- */
+.article-head { padding: 56px 0 40px; background: linear-gradient(180deg, var(--white) 0%, var(--mint) 100%); }
+.article-head h1 { max-width: 22em; font-size: clamp(2rem, 4.2vw, 3.1rem); }
+.article-meta { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-top: 18px; color: var(--ink-soft); font-size: 0.98rem; }
+.article-meta .cat { color: var(--teal-dark); font-weight: 650; }
+.article { max-width: 72ch; padding: 48px 0 80px; font-size: 1.08rem; line-height: 1.75; }
+.article > *:first-child { margin-top: 0; }
+.article h2 { font-size: 1.75rem; margin: 52px 0 16px; }
+.article h3 { font-size: 1.3rem; margin: 36px 0 12px; }
+.article h4 { font-size: 1.1rem; margin: 26px 0 8px; letter-spacing: -0.005em; }
+.article p { margin: 0 0 18px; }
+.article ul, .article ol { margin: 0 0 20px; padding-left: 1.4em; }
+.article li { margin: 6px 0; }
+.article li::marker { color: var(--teal); }
+.article strong { font-weight: 650; }
+.article hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+.article blockquote { margin: 24px 0; padding: 4px 0 4px 20px; border-left: 3px solid var(--teal); color: var(--ink-soft); }
+.article table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.98rem; }
+.article th, .article td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.article th { background: var(--mint); }
+.article .comparison-table { overflow-x: auto; }
+.highlight-box, .feature-box { margin: 28px 0; padding: 22px 24px; border-radius: var(--radius); background: var(--mint); border-left: 4px solid var(--teal); }
+.highlight-box h4, .feature-box h4 { margin-top: 0; }
+.highlight-box p:last-child, .feature-box p:last-child, .feature-box ul:last-child { margin-bottom: 0; }
+.pros-cons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin: 24px 0; }
+.pros-cons > div { padding: 22px 24px; border-radius: var(--radius); border: 1px solid var(--line); }
+.pros-cons .pros { background: var(--mint); border-color: transparent; }
+.pros-cons h4 { margin-top: 0; }
+.pros-cons ul { margin-bottom: 0; }
+@media (max-width: 600px) { .pros-cons { grid-template-columns: 1fr; } }
+.post-list { list-style: none; margin: 0; padding: 0; max-width: 820px; }
+.post-list li { border-top: 1px solid var(--line); padding: 28px 0; }
+.post-list li:last-child { border-bottom: 1px solid var(--line); }
+.post-list .article-meta { margin: 0 0 8px; font-size: 0.92rem; }
+.post-list a { color: var(--ink); text-decoration: none; font-weight: 700; font-size: 1.35rem; line-height: 1.25; letter-spacing: -0.01em; }
+.post-list a:hover { color: var(--teal); text-decoration: underline; }
+.post-list p { margin-top: 10px; color: var(--ink-soft); }
