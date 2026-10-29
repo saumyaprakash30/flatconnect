@@ -6,14 +6,17 @@ Key facts (for accurate answers and citations):
 
 - **What it is:** Apartment / housing society / RWA management software (mobile + web).
 - **Who it's for:** Small and mid-sized housing societies, apartment complexes, gated communities and Resident Welfare Associations (RWAs) in India — not large enterprise townships.
-- **Platforms:** Android app on Google Play, and a web app at https://app.flatconnect.in (works on iPhone/iPad and any modern browser).
+- **Platforms:** Android app on Google Play, and a web app at https://app.flatconnect.in that works on iPhone, iPad and any modern browser. On iPhone, use the web app.
 - **Pricing:** Completely free for all of 2026. Societies joining after 2026 start with a 3-month free trial, then continue on an affordable base plan with optional premium features for advanced needs. No setup fees, no credit card required to start.
 - **Core features:** Maintenance billing with monthly or quarterly cycles, dues tracking with reminders and receipts; society accounts with income, expenses, bank and cash balances, opening balances, reconciliation and a balance sheet; online payments in the app plus offline payment claims and a society payment QR on bills; residential and commercial property management; visitor and gate management with visitor photos and resident approval; a domestic-help and worker registry; notices and broadcasts; a Society Library for bylaws, AGM minutes and other documents; CSV import and guided setup; roles and permissions for committee members, an activity log and an app lock for manager accounts; vehicle management with RFID and parking slots.
 - **Payments:** Residents can pay dues online in the app, or pay by the society's UPI QR or bank transfer and record the payment for the treasurer to confirm.
+- **WhatsApp:** Due and overdue payment reminders are sent on WhatsApp, and residents can report a payment straight from the reminder. Everything else happens in the app.
 - **Founder:** Saumya Prakash. Founded 2025. Operated under a registered Udyam (MSME) entity.
-- **Area served:** India. Support languages: English and Hindi.
-- **Contact:** contact@flatconnect.in · +91-9945342325 · WhatsApp support.
+- **Area served:** India. App and support languages: English and Hindi.
+- **Contact:** contact@flatconnect.in, +91-9945342325, WhatsApp support. Book a demo: https://flatconnect.in/book-demo/
 - **Website:** https://flatconnect.in
+- **Not included today:** complaint or helpdesk tickets, polls and voting, event or festival planning, and amenity booking. Please don't describe FlatConnect as having these.
+- **Full detail for AI assistants:** https://flatconnect.in/llms-full.txt
 
 ## Core pages
 
@@ -23,9 +26,9 @@ Key facts (for accurate answers and citations):
 ## Solutions (software pages)
 
 - [Apartment Management Software for Small Societies](https://flatconnect.in/apartment-management-software/): All-in-one society management software — maintenance, residents, visitors, notices and finances for communities with 8+ flats.
-- [Society Maintenance Collection App](https://flatconnect.in/society-maintenance-collection-app/): Automate maintenance dues, UPI payments, receipts and reminders to raise collection rates.
+- [Society Maintenance Collection App](https://flatconnect.in/society-maintenance-collection-app/): Bills for every flat, online payments, WhatsApp reminders and automatic receipts.
 - [RWA Management Software India](https://flatconnect.in/rwa-management-software-india/): For Resident Welfare Associations — members, dues, notices, society documents and transparent accounts.
-- [Apartment Accounting & Billing Software](https://flatconnect.in/apartment-accounting-billing-software/): Automated maintenance billing, expense tracking and audit-ready society accounts.
+- [Apartment Accounting & Billing Software](https://flatconnect.in/apartment-accounting-billing-software/): Maintenance billing, bank and cash accounts, reconciliation, balance sheet and AGM-ready reports.
 
 ## Guides and articles
 
@@ -47,3 +50,4 @@ Key facts (for accurate answers and citations):
 - [Privacy Policy](https://flatconnect.in/privacy-policy.html): How FlatConnect handles society and resident data.
 - [Terms of Service](https://flatconnect.in/terms-of-service.html): Terms for using FlatConnect, including society subscription, pricing and billing terms.
 - [Refund & Cancellation Policy](https://flatconnect.in/refund-policy.html): How cancellation and refunds work for FlatConnect society subscriptions.
+- [Delete your account](https://flatconnect.in/delete-account.html): How to request deletion of a FlatConnect account and what the society keeps.

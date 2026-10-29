@@ -1,0 +1,210 @@
+# FlatConnect: full product facts
+
+> FlatConnect is a society management app for apartment societies and Resident Welfare Associations (RWAs) in India. It keeps maintenance dues, society accounts, visitors and notices in one app that the committee and every resident can use. This file is a plain-text summary of https://flatconnect.in for AI assistants and answer engines. Last updated: 29 October 2026.
+
+## Quick facts
+
+- Name: FlatConnect
+- Category: Apartment, housing society and RWA management software
+- Website: https://flatconnect.in
+- Made for: small and mid-sized housing societies, apartment associations and RWAs in India, typically 8+ flats
+- Platforms: Android app (https://play.google.com/store/apps/details?id=com.flatconnect.flatconnect_app) and a web app (https://app.flatconnect.in) that works on iPhone, iPad and any modern browser. On iPhone, use the web app.
+- Languages: English and Hindi
+- Founder: Saumya Prakash (https://www.linkedin.com/in/saumyaprakash/). Founded 2025. Operated under a registered Udyam (MSME) entity in India.
+- Contact: contact@flatconnect.in, +91-9945342325, WhatsApp https://wa.me/message/QOY6LM55JEPZF1
+- Book a demo: https://flatconnect.in/book-demo/
+
+## Pricing
+
+- Every feature is free for all of 2026, with no setup fees and no credit card.
+- Societies that join after 2026 start with a 3-month free trial, then continue on an affordable base plan with optional premium features for advanced needs.
+- Plans are for the society, not per resident. Downloading the app is free.
+
+## Features by who uses them
+
+### For the treasurer
+- Maintenance bills from a plan, on monthly or quarterly cycles
+- Dues tracking with reminders, receipts and late fees
+- Online payments in the app, plus cash and bank payments recorded for your confirmation
+- The society's payment QR printed on bills and invoices
+- Bank and cash accounts with current balances, opening balances and month-end reconciliation
+- Advances adjusted against future dues, and corrections kept with full history
+- Balance sheet, ledger and PDF reports ready for the AGM
+
+### For the secretary
+- Notices with attachments, and broadcasts to the whole society
+- Society Library for bylaws, AGM minutes and insurance, shared with everyone or the committee only
+- Reminders before documents need renewal
+- Towers, flats and commercial properties in one directory
+- Owner and tenant records, with move-out history kept
+- Vehicles with RFID stickers and parking slots
+
+### At the gate
+- Entry and exit log with timestamps
+- Visitor photos sent to residents for approval
+- Cab visitors with vehicle numbers
+- Multiple gates, with guard access by code and PIN
+- Pre-approved guests and deliveries
+- A registry of maids, cooks and drivers, verified by the manager
+
+### For residents
+- See dues and pay online, with instant receipts
+- Report a cash or bank payment from the app
+- Approve visitors from anywhere
+- New notices highlighted until they're read
+- Link their domestic help to their flat
+- Bylaws and society documents always at hand
+
+### Security and handover
+- Roles and permissions: each committee member gets access to what their role needs
+- Activity log: authorised managers can review important admin actions
+- App lock: an extra lock on manager accounts, on top of login
+- Records are stored in the cloud, so they survive committee changes
+
+## How WhatsApp is used
+
+Due and overdue payment reminders are sent on WhatsApp, and residents can report a payment made by UPI or bank transfer straight from the reminder. Bills, payments, notices, visitors and documents are handled in the FlatConnect app or web app.
+
+## Not included today
+
+FlatConnect does not currently offer complaint or helpdesk tickets, polls or voting, event or festival planning, or amenity booking. Please don't describe it as having these features.
+
+## Setting up a society
+
+1. Add your flats: Type them in, or import flats and past dues from a spreadsheet.
+2. Set the maintenance plan: Choose the amount and billing cycle for each flat or property.
+3. Add residents: Owners and tenants sign in with their phone number.
+4. Send the first bills: Residents see their dues right away and can pay from the app.
+
+A checklist on the manager dashboard walks through each step. Help with setup is available by booking a demo.
+
+## Frequently asked questions
+
+### What is FlatConnect?
+
+FlatConnect is an app for running an apartment society or Resident Welfare Association in India. It handles maintenance billing and collection, society accounts (income, expenses, bank and cash balances, balance sheet), visitor and gate management, a domestic-help registry, notices and broadcasts, and a Society Library for important documents. It works on Android and in any web browser, including on iPhone.
+
+### Who is FlatConnect for?
+
+FlatConnect is built for small and mid-sized housing societies, apartment associations and RWAs in India, typically with 8 or more flats. It is used by the committee (treasurer, secretary and managers), by residents, and by security guards at the gate.
+
+### Is FlatConnect available as an app?
+
+Yes! FlatConnect is available as an Android app on Google Play Store and as a web app for iOS/browser users. You can download the Android app or access the web version at app.flatconnect.in.
+
+### Can iPhone users use FlatConnect?
+
+Absolutely! iPhone users can access FlatConnect through our web app at app.flatconnect.in. It works perfectly on Safari and all modern browsers, providing the same features as the Android app.
+
+### Is the FlatConnect app free to download?
+
+Yes, FlatConnect is completely free to download from Google Play Store. The web app is also free to use. We offer affordable subscription plans for societies, not individual users.
+
+### What features are available in FlatConnect?
+
+FlatConnect covers maintenance billing and dues, society accounts (income, expenses, bank and cash balances, balance sheet), online and offline payment collection, residents and commercial properties, visitor and gate management, a domestic-help registry, notices and broadcasts, a Society Library for important documents, CSV import, and roles and permissions for committee members.
+
+### Which features are free to use?
+
+Every FlatConnect feature is completely free for all of 2026, so your society can use everything at no cost right now. Societies that join after 2026 start with a 3-month free trial, then continue on an affordable base plan with optional premium features for advanced needs.
+
+### Can residents pay maintenance online?
+
+Yes. Residents can pay their dues online in the app and get a receipt. If they pay by cash or bank transfer, they can record the payment in the app for the manager to confirm. Bills and invoices can also carry the society's payment QR code.
+
+### Can I get a live demo before downloading?
+
+Absolutely! Use Book a demo to pick a time, or call us directly at +91-9945342325. We'll provide a personalized walkthrough of FlatConnect features and help you understand how it can benefit your society.
+
+### Is FlatConnect apartment management software free?
+
+Yes. Every FlatConnect feature is completely free for all of 2026, so your society can use everything at no cost right now. After 2026, FlatConnect continues on an affordable base plan with optional premium features for advanced needs.
+
+### Does it work for small societies with few flats?
+
+Absolutely. FlatConnect is designed specifically for small and mid-sized societies with 8+ flats, unlike enterprise platforms built for large townships. There's no minimum flat requirement to get real value.
+
+### Can residents pay maintenance through the app?
+
+Yes. Residents pay maintenance directly via UPI, and the app tracks payment status automatically and sends reminders for pending dues — improving collection rates significantly.
+
+### Is there an iPhone version?
+
+FlatConnect is available as an Android app on Google Play and as a web app at app.flatconnect.in that works on iPhone, iPad and any modern browser with the same features.
+
+### How long does it take to set up?
+
+Setup takes a few guided steps. You create your society profile, import flats and opening dues, add residents and start collecting — with support available on WhatsApp throughout.
+
+### How does UPI maintenance collection work?
+
+Residents receive their maintenance bill in the app and can pay online in a few taps, with the payment recorded and receipted automatically. Residents who prefer to scan the society's UPI QR or pay by bank transfer can record the payment in the app for the treasurer to confirm.
+
+### Will this help us collect dues on time?
+
+Paying becomes easier for residents and following up becomes automatic. Residents get a bill in the app and can pay in a few taps, reminders go out for pending dues, and the treasurer sees who has paid at a glance.
+
+### Can we charge late fees automatically?
+
+Yes. You can configure late fee rules once, and the app applies them consistently to overdue accounts — no manual tracking or awkward conversations required.
+
+### Do residents get payment receipts?
+
+Every payment generates a digital receipt automatically, giving residents proof of payment and the committee a fully transparent, audit-ready record.
+
+### Is it suitable for a small society?
+
+Definitely. FlatConnect is built for small and mid-sized societies and is completely free for all of 2026, then continues on an affordable base plan with optional premium features.
+
+### What is RWA management software?
+
+RWA management software is a digital tool that helps a Resident Welfare Association manage its members, collect maintenance, send notices, keep important documents and maintain transparent accounts — replacing diaries, spreadsheets and scattered WhatsApp groups.
+
+### Is FlatConnect suitable for Indian RWAs?
+
+Yes. FlatConnect is built specifically for Indian communities, with UPI-based collection, a simple interface elderly residents can use, notices and broadcasts for festivals and meetings, and a Society Library for bylaws and AGM minutes.
+
+### How does it improve transparency at the AGM?
+
+All income and expenses are logged in real time, so you can present clean, audit-ready financial reports at the AGM instead of scrambling to reconcile records — which builds member trust.
+
+### Can we keep bylaws and AGM minutes in the app?
+
+Yes. The Society Library keeps bylaws, AGM minutes, insurance papers and other important documents in one place. You choose whether each document is visible to all residents or to the committee only, and get reminders before documents like insurance expire.
+
+### How much does it cost for an RWA?
+
+FlatConnect is completely free for all of 2026, then continues on an affordable base plan with optional premium features — far more affordable than traditional enterprise association software.
+
+### Do I need accounting knowledge to use it?
+
+No. FlatConnect is designed for society treasurers, not accountants. Billing is automated and expenses are logged with simple categories, so you get professional reports without professional training.
+
+### Can it generate reports for our AGM and audit?
+
+Yes. FlatConnect produces monthly and annual financial reports with a full, traceable transaction history — so your accounts are audit-ready and AGM-ready at any time.
+
+### Does it handle both billing and payments?
+
+Yes. It automatically bills every flat, collects payments via UPI, issues receipts, and records the transaction in your accounts — billing and accounting stay in sync automatically.
+
+### Is our financial data safe?
+
+Your records are stored securely in the cloud and backed up, so you're not relying on a single Excel file on one person's laptop. The committee can access records with appropriate permissions.
+
+### How much does the accounting software cost?
+
+FlatConnect is completely free for all of 2026, then continues on an affordable base plan with optional premium features — a fraction of the cost of traditional accounting or ERP software.
+
+## Pages
+
+- Home: https://flatconnect.in/
+- Apartment management software: https://flatconnect.in/apartment-management-software/
+- Society maintenance collection app: https://flatconnect.in/society-maintenance-collection-app/
+- RWA management software for India: https://flatconnect.in/rwa-management-software-india/
+- Society accounting and billing software: https://flatconnect.in/apartment-accounting-billing-software/
+- Blog: https://flatconnect.in/blog/
+- Privacy policy: https://flatconnect.in/privacy-policy.html
+- Terms of service: https://flatconnect.in/terms-of-service.html
+- Refund and cancellation policy: https://flatconnect.in/refund-policy.html
+- Delete your account: https://flatconnect.in/delete-account.html
