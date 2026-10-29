@@ -360,6 +360,7 @@
     .nav { display: flex; align-items: center; gap: 28px; height: var(--header-h); }
     .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 750; font-size: 1.25rem; letter-spacing: -0.01em; }
     .brand img { width: 34px; height: 34px; }
+    .tm { font-weight: 400; font-size: 0.5em; margin-left: 1px; vertical-align: super; line-height: 0; opacity: 0.8; }
     .nav-links { display: flex; align-items: center; gap: 4px; margin: 0 0 0 auto; padding: 0; list-style: none; }
     .nav-links a, .nav-links summary {
       display: block; padding: 8px 12px; border-radius: 8px; color: var(--ink); text-decoration: none; font-weight: 550; font-size: 1rem; cursor: pointer;
@@ -544,7 +545,7 @@
     <div class="wrap nav">
       <a class="brand" href="#home" aria-label="FlatConnect home">
         <img src="public/flatConnectIcon.png" alt="" width="34" height="34">
-        <span>FlatConnect&trade;</span>
+        <span>FlatConnect<sup class="tm">&trade;</sup></span>
       </a>
       <button class="nav-toggle" type="button" aria-controls="navPanel" aria-expanded="false" aria-label="Open menu"><span></span></button>
       <div class="nav-panel" id="navPanel">
@@ -932,7 +933,7 @@
     <div class="wrap">
       <div class="foot-grid">
         <div>
-          <div class="foot-brand"><img src="public/flatConnectIcon.png" alt="" width="30" height="30">FlatConnect&trade;</div>
+          <div class="foot-brand"><img src="public/flatConnectIcon.png" alt="" width="30" height="30">FlatConnect<sup class="tm">&trade;</sup></div>
           <p style="margin-top: 14px;">Society management for apartments and RWAs in India.</p>
           <p style="margin-top: 14px;"><a href="mailto:contact@flatconnect.in">contact@flatconnect.in</a><br><a href="https://wa.me/message/QOY6LM55JEPZF1" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
         </div>
